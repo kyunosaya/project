@@ -1,0 +1,627 @@
+@charset "utf-8";
+
+/* 질문
+
+모바일, 타블렛 메뉴 어떻게 만들어야할지.
+*/
+body{
+  text-decoration: none;
+}
+#wrap{
+  font:18px/30px Arial,sans-serif;
+  color:#595959;
+  position:relative;
+  
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.hide{
+  width:0; height:0;
+  font-size:0; line-height:0;
+  position:absolute; visibility:hidden;
+}
+
+/* 공통 */
+header>div,nav>div,article>div,footer>div{
+  width:1200px;
+  margin: 0 auto;
+  /* background-color: pink   */
+}
+#box02,#box03,#box04,#box05,#box06{
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+div>h3,h4{
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+}
+p.title{
+  font-size:36px;
+}
+
+/* header */
+#headerWrap{
+  width:100%;
+  /* height:600px; */
+  height:194px;
+  position:absolute;
+  left:0; top:0px;
+  background-color:rgba(255, 255, 255, 0.8);
+  z-index:400;
+}
+header{
+  width:100%;
+  background-color: #A9D1B9;
+  padding: 18px 0;
+}
+header>div{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+header>div>h1>a>img{}
+header>div>ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+header>div>ul>li{
+  font-size: 16px;
+  border-right: solid 1px #8C8C8C;
+  display:inline;
+  padding:0 15px 0;
+}
+header>div>ul>li:nth-child(4){border-right-style: none;}
+header>div>ul>li>a{
+  color: white;
+}
+p.btn{}
+p.btn>span{}
+
+/* nav */
+nav{
+  background-color: #F8F3EB;
+  width:100%;
+  position:relative;
+}
+nav>div{
+  width:100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+}
+li.hiddenMobile{
+  display: none;
+}
+nav>div>h2{}
+nav>div>h2>img{}
+nav>div>ul{
+  display: flex;
+  justify-content:space-between;
+  padding: 30px 0;
+
+}
+nav>div>ul>li{
+padding: 0 110px 0;
+/* position:relative; */
+}
+nav>div>ul>li>a{
+  color: #595959;
+}
+nav>div>ul>li>span{}
+/*  */
+/*  */
+/*  */
+nav>div>ul>li>div{
+  display:none;
+  position: absolute;
+  top:230px; left:0;
+  width:100%;
+  /* margin: 0 auto; */
+  /* display: none; */
+  /* margin-left:-600px; */
+}
+nav>div>ul>li>div>ul{
+  /* position: relative; */
+  width:1200px;
+  margin: 0 auto;
+  background-color: rgb(42, 238, 101);
+}
+nav>div>ul>li>div>ul>li{
+  float:left;
+}
+nav>div>ul>li>div>ul>li>a{
+  color:#595959
+}
+nav>div>ul>li>div>ul>li>a>p{
+  text-align: center;
+}
+nav>div>ul>li>div>ul>li>a>img{
+  border: solid 1px #DFDFDF;
+  width:197px;
+}
+
+/* nav>div>p.close{
+  position: absolute;
+  right:0; top:0;
+  width:22px; height:22px;
+  background-color: #595959;
+} */
+p.close>span{}
+
+/* main */
+main{
+  padding-top:194px;
+}
+
+
+/* box01 */
+#box01{
+  position: relative;
+  overflow: hidden;
+  height : 1000px;
+  /* height : calc(100vh - 194px); */
+}
+#box01>h2{
+  border: solid 6px #ffffff;
+  text-align: center;
+  font-size:90px;
+  line-height: 110px;
+  width:895px; height:442px;
+  position:absolute;
+  top:50%; left:50%;
+  margin:-227px 0 0 -453.5px;
+  color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+#box01>ul{
+  width:300%;
+  height:100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+#box01>ul>li{
+  width:33.33333%; height:100%;
+  background: url('../img/intro01.png') no-repeat center top;
+  background-size: 100%;
+  text-indent:-99999px
+}
+#box01>ul>li.pic02{background: url('../img/intro02.png') no-repeat ;}
+#box01>ul>li.pic03{background: url('../img/intro04.png') no-repeat ;}
+#box01>.picNav{
+  position:absolute;
+  bottom:0; left:50%;
+  margin-left:-30px;
+  /* background-color:red;  */
+  color:white;
+}
+#box01>.picNav>a{
+  width:20px; height:20px;
+  display: inline-block;
+  border-radius:50%;
+  background-color: #ffffff;
+  text-indent: -99999px;
+  margin:0 6px 0;
+}
+
+/* box02 */
+#box02{}
+#box02>div{
+  /* background-color: yellowgreen; */
+}
+#box02>div>h3{
+  width:230px;
+  border-bottom: solid 1px #595959;
+  margin:0 auto 70px;
+}
+#box02>div>div{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#box02>div>div>figure{
+  width:270px; height:583px;
+  /* background-color: violet; */
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+#box02>div>div>figure>img{
+  border: solid 1px #dfdfdf;
+}
+#box02>div>div>figure>figcaption{}
+#box02>div>div>figure>figcaption>dl{
+  padding: 20px 35px;
+}
+#box02>div>div>figure>figcaption>dl>dt{
+  font-size:23px;
+  line-height: 35px;
+  margin-bottom: 8px;
+}
+#box02>div>div>figure>figcaption>dl>dd{
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+#box02>div>div>figure>figcaption>dl>dd:nth-child(3){
+  margin-bottom: 20px;
+}
+dd>.goCart>button{
+  width:180px;
+  line-height: 45px;
+  border: solid 1px #6F9475;
+  background-color: #ffffff;
+  color:#6F9475
+}
+#box02>div>p.goProducts{
+  padding: 60px 0;
+  text-align: center;
+  font-size:27px;
+}
+#box02>div>p.goProducts>a{
+  color:#595959
+}
+
+/* box03 */
+#box03{}
+#box03>div{
+  width:100%; height:100%;
+  background: url('../img/intro_join.png') no-repeat center top;
+  background-size: 100%;
+  position: relative;
+  padding: 120px 0;
+}
+#box03>div>div{
+  /* background-color: yellowgreen; */
+  width:1200px;
+  margin:0 auto;
+  /* position: absolute;
+  top:110px; left:0; */
+}
+#box03>div>div>dl{
+  line-height: 35px;
+  margin-bottom: 60px;
+}
+#box03>div>div>dl>dt{
+  color:#2C2F71;
+  font-size: 63px;
+  line-height: 75px;
+  margin-bottom: 15px;
+}
+#box03>div>div>dl>dd{
+  font-size: 27px;
+}
+#box03>div>div>dl>dd.small{
+  font-size: 16px;
+}
+#box03>div>.goJoin{
+  text-align: center;
+}
+#box03>div>.goJoin>button{
+  width:310px;
+  line-height: 60px;
+  border:solid 3px #2C2F71;
+  color:#2C2F71;
+  font-size:27px;
+  background-color: transparent;
+}
+
+/* box04 */
+#box04{overflow: hidden;}
+#box04>div{
+  /* background-color: #2C2F71; */
+}
+/* 공통 */
+#box04>div>div,#box04 img{width:600px; height:600px;}
+#box04>div>div.no01{
+  float:left;
+}
+#box04>div>div.no02,#box04>div>div.no04{
+  background-color:#F8F3EB;
+  padding:128px 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#box04>div>div>p>button{
+  width:284px;
+  line-height: 60px;
+  color:#6F9475;
+  background-color: transparent;
+  border:solid 2px #6F9475;
+}
+/*  */
+#box04>div>div.no02{
+  float:right;
+}
+#box04>div>div.no03{
+  float:right;
+}
+#box04>div>div.no04{
+  float:left;
+}
+#box04>div>div>p.title{
+  margin-bottom:55px;
+}
+#box04>div>div>p.text{
+  margin-bottom: 20px;
+}
+#box04>div>div>p.text:nth-child(3){
+  margin-bottom: 50px;
+}
+
+/* box05 */
+#box05{}
+#box05>div{
+  border: 10px solid #A9D1B9;
+  padding:35px 113px 0px;
+  box-sizing: border-box;
+}
+#box05>div>h4{
+  width:190px;
+  border-bottom:1px solid #595959;
+  margin: 0 auto 100px;
+}
+#box05>div>div{
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap: wrap;
+}
+#box05>div>div>figure{
+  margin-right:160px ;
+  margin-bottom:100px ;
+}
+#box05>div>div>figure:nth-child(3),#box05>div>div>figure:nth-child(6){
+  margin-right:0
+}
+#box05>div>div>figure>img{
+  width:200px; height:200px;
+  border:solid 5px #A1A1A1;
+  border-radius: 50%;
+}
+#box05>div>div>figure>figcaption{
+  text-align: center;
+}
+
+/* box06 */
+#box06{
+  /* background-color: #2C2F71; */
+  overflow: hidden;
+  margin-bottom: 0;
+}
+#box06>div{
+  width:100%;
+}
+/* 공통 */
+#box06>div>div{
+  width:50%; height: 450px;
+  box-sizing: border-box;
+  padding:128px 40px;
+  box-sizing: border-box;
+}
+#box06>div>div>div{
+  width:600px;
+}
+
+#box06>div>div.addition01{
+  background-color: #ECE2C8;
+  float:left;
+  position: relative;
+}
+
+#box06>div>div.addition01>div{
+  float:right
+}
+#box06>div>div.addition01>div>p.title{
+  color:#644A33;
+  margin-bottom: 100px;
+}
+#box06>div>div.addition01>div>p>input[type="text"]{
+  width:336px;
+  border:none;
+  background-color: transparent;
+  border-bottom: 1px solid #595959;
+  margin-bottom: 15px;
+}
+#box06>div>div.addition01>div>p>input[type="checkbox"]{}
+
+#box06>div>div.addition01>p>button{
+  width:130px;
+  color:#644A33;
+  background-color: #ffffff;
+  border:3px solid #644A33;
+  line-height: 39px;
+  position: absolute;
+  top:227px; right:100px;
+}
+#box06>div>div.addition01>p{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+}
+#box06>div>div.addition02{
+  background-color: #A9D1B9;
+  float:right;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+#box06>div>div.addition02>div{
+  color:white
+}
+#box06>div>div.addition02>div>p.title{
+  margin-bottom:22px
+}
+#box06>div>div.addition02>div>p.text{
+  margin-bottom: 22px;
+}
+#box06>div>div.addition02>p.goStore{}
+#box06>div>div.addition02>p.goStore>button{
+  width:215px;
+  line-height: 55px;
+  border:solid 1px #ffffff;
+  color:white;
+  background-color: transparent;
+  position: absolute;
+  top:262px; left:25%;
+}
+
+
+
+/* view */
+#view{
+  /* background-color: yellowgreen; */
+}
+#view>div{
+  width:100%;
+  /* background-color: turquoise; */
+  padding: 55px 0 156px;
+}
+#view>div>h4{
+  color:#407A1D;
+  margin-bottom: 63px;
+}
+#view>div>ul{
+  width:3800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start
+}
+#view>div>ul>li{
+  width:250px;
+  /* background-color: tomato; */
+  padding: 16px 65px 20px;
+  position: relative;
+}
+#view>div>ul>li>figure{}
+#view>div>ul>li>figure>img{
+  border: 1px solid #dfdfdf;
+  margin-bottom: 15px;
+}
+#view>div>ul>li>figure>figcaption{}
+#view>div>ul>li>figure>figcaption>dl{
+  width:200px;
+}
+#view>div>ul>li>figure>figcaption>dl>dt{
+  font-size:24px;
+  margin-bottom: 30px;
+}
+#view>div>ul>li>figure>figcaption>dl>dd{
+  margin-bottom: 20px;
+}
+#view>div>ul>li>figure>figcaption>dl>dd:nth-child(3){
+  color:#407A1D;
+  font-size: 15px;
+  position: absolute;
+  bottom:0; right:65px;
+}
+
+
+
+/* footer */
+footer{
+  background-color: #A9D1B9;
+  color:#ffffff;
+  font-size:16px;
+}
+footer>div:nth-child(1){
+  /* width:100%; */
+  /* background-color: violet; */
+  padding: 40px 0px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer>div:nth-child(2){
+  width:100%;
+  text-align: center;
+}
+  /* footer01 */
+footer>div>div.footer01{
+  padding-right:140px ;
+  border-right: 1px solid #ffffff;
+}
+footer>div>div>p{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+footer>div>div.footer01>dl{
+  width:262px;
+  box-sizing: border-box;
+  border:1px solid #ffffff;
+  padding:15px 25px;
+}
+footer>div>div.footer01>dl>dt{
+  display: inline-block;
+}
+footer>div>div.footer01>dl>dd{
+  display: inline;
+}
+  /* footer02 */
+footer>div>div.footer02{
+  padding-right:140px ;
+  border-right: 1px solid #ffffff;
+}
+footer>div>div.footer02>ul{
+  padding-top:40px;
+}
+footer>div>div.footer02>ul>li{
+  line-height: 43px;
+}
+footer>div>div.footer02>ul>li>a{
+  color:white
+}
+  /* footrt03 */
+footer>div>div.footer03{}
+footer>div>div.footer03>p{}
+footer>div>div.footer03>dl{
+  width:230px
+}
+footer>div>div.footer03>dl>dt{
+  /* margin-bottom: 10px; */
+  display: inline;
+}
+footer>div>div.footer03>dl>dt>a>img{
+  width:30px;
+  margin-right:7px
+}
+footer>div>div.footer03>dl>dd{
+  display: inline;
+}
+footer>div>div.footer03>dl>dd:nth-child(4){
+  margin-right:10px
+}
+footer>div>div.footer03>dl>dd>a{
+  color:white;
+}
+
+  /* footer04 */
+footer>div>div.footer04{
+  background-color: black;
+  color:white;
+  font-size: 11px;
+  padding:35px 0;
+}
+footer>div>div.footer04>dl{}
+footer>div>div.footer04>dl>dt{
+  display: inline;
+}
+footer>div>div.footer04>dl>dd{
+  display: inline;
+  padding-right: 5px;
+  border-right: 1px solid #ffffff;
+}
+footer>div>div.footer04>dl>dd:nth-child(6){
+  border-style:none
+}
