@@ -110,8 +110,12 @@
                             <li class="pic03">매장 구매 이벤트</li>
                         </ul>
 
-                        <p class="prev"></p>
-                        <p class="next"></p>
+                        <p class="prev">
+                            <img src="./img/prev.png" alt="prevbutton">
+                        </p>
+                        <p class="next">
+                            <img src="./img/next.png" alt="nextbutton">
+                        </p>
 
                         <p class="picNav">
                             <a href=".pic01">no01</a>
@@ -122,7 +126,7 @@
                 
                 <!-- box02 -->
                 <article id="box02">
-                    <div>
+                    <section>
                         <h3>추천 핸드크림</h3>
                         <div>
                             <figure>
@@ -251,12 +255,12 @@
                         <p class="goProducts">
                             <a href="">모든 제품 보러가기</a>
                         </p>
-                    </div>
+                    </section>
                 </article>
 
                 <!-- box03 -->
                 <article id="box03">
-                    <div>
+                    <section>
                         <h3 class="hide">회원가입 이벤트</h3>
                         <div>
                             <dl>
@@ -267,16 +271,16 @@
                             </dl>
                         </div>
                         <p class="goJoin"><button>회원가입 하러 가기</button></p>
-                    </div>
+                    </section>
                 </article>
 
                 <!-- box04 -->
                 <article id="box04">
                     <div>
-                        <h4 class="hide">소개글</h4>
-                        <div class="no01"><img src="./img/intro06.png" alt="소개글01"></div>
-                        <div class="no02">
-                            <p class="title">자연의 향기를 사랑합니다.</p>
+                        <div class="no01"></div>
+
+                        <section class="no02">
+                            <h4>자연의 향기를 사랑합니다.</h4>
                             <p class="text">자연의 향기를 그대로 담으려고 
                                 많은 고민과 연구 끝에 탄생한 제품들을 
                                 판매하고 있습니다.
@@ -286,88 +290,89 @@
                             </p>
                                 
                             <p class="goProducts">
-                                <button>제품 보러 가기</button>
+                                <a href="">제품 보러 가기</a>
                             </p>
-                        </div>
-                        <div class="no03"><img src="./img/intro07.png" alt="소개글02"></div>
-                        <div class="no04">
-                            <p class="title">사랑하는 사람에게 선물하세요.</p>
+                        </section>
+
+                        <div class="no03"></div>
+
+                        <section class="no04">
+                            <h4>사랑하는 사람에게 선물하세요.</h4>
                             <p class="text">사랑하는 사람에게 내가 좋아하는 핸드크림을 선물할 수 있는 프로모션을 준비했습니다.
                             <p class="text">
                                 사랑하는 사람에게 자연의 향기를 선물해서
                                 산뜻함을 전해주면 분명 기뻐할 것입니다.
                             </p>
                             <p class="goPromotion">
-                                <button>이 달의 프로모션 보러가기</button>
+                                <a href="">이 달의 프로모션 보러가기</a>
                             </p>
-                        </div>
+                        </section>
                     </div>
                 </article>
 
                 <!-- box05 -->
                 <article id="box05">
-                    <div>
+                    <section>
                         <h4>참여 브랜드</h4>
                         <div>
                             <figure>
-                                <img src="./img/logo/loccitane_squarelogo.png" alt="록시땅로고">
+                                <div class="loccitaneLogo"></div>
                                 <figcaption>록시땅</figcaption>
                             </figure>
                             <figure>
-                                <img src="./img/logo/thebodyshop_squarelogo.png" alt="더바디샵로고">
+                                <div class="thebodyshopLogo"></div>
                                 <figcaption>더바디샵</figcaption>
                             </figure>
                             <figure>
-                                <img src="./img/logo/kamill_squarelogo.png" alt="카밀로고">
+                                <div class="kamillLogo"></div>
                                 <figcaption>카밀</figcaption>
                             </figure>
                             <figure>
-                                <img src="./img/logo/frudia_squarelogo.png" alt="후르디아로고">
+                                <div class="frudiaLogo"></div>
                                 <figcaption>후르디아</figcaption>
                             </figure>
                             <figure>
-                                <img src="./img/logo/onhope_squarelogo.png" alt="온호프로고">
+                                <div class="onhopeLogo"></div>
                                 <figcaption>온호프</figcaption>
                             </figure>
                             <figure>
-                                <img src="./img/logo/DAD_squarelogo.png" alt="더프트앤도프트로고">
+                                <div class="duftanddoftLogo"></div>
                                 <figcaption>더프트앤도프트</figcaption>
                             </figure>
                         </div>
-                    </div>
+                    </section>
                 </article>
 
                 <!-- box06 -->
                 <article id="box06">
                     <div>
-                        <h4 class="hide">추가글</h4>
-                        <div class="addition01">
+                        <section class="addition01">
                             <div>
-                            <p class="title">
-                                새로운 소식을 이메일로 받아보세요.
-                            </p>
-                            
+                                <h4>새로운 소식을 이메일로 받아보세요.</h4>
                                 <p><input type="text"></p>
-                                <p><input type="checkbox">이용 약관을 읽고 동의합니다.</p>
+                                <p>
+                                    <input type="checkbox" id="userCheck01">
+                                    <label id="userCheck01">이용 약관을 읽고 동의합니다.</label>
+                                </p>
                             </div>
                             <p>
                                 <button type="submit">전송</button>
                             </p>
-
-                        </div>
-                        <div class="addition02">
+                        </section>
+                        
+                        <section class="addition02">
                             <div>
-                                <p class="title">직접 와서 체험해보세요!</p>
+                                <h4>직접 와서 체험해보세요!</h4>
                                 <p class="text">해외직구를 통해 만날 수 있었던 글로벌 인기 브랜드 부터 국내 브랜드까지 자유롭게 경험하고 테스트 할 수 있습니다.</p>
                             </div>
                             <p class="goStore"><button>시코르 매장안내</button></p>
-                        </div>
+                        </section>
                     </div>
                 </article>
 
                 <!-- box07 -->
                 <article id="view">
-                    <div>
+                    <section>
                         <h4>상품 목록</h4>
                         <ul>
                             <li>
@@ -492,14 +497,112 @@
                             </li>
                         </ul>
 
-                    </div>
+                    </section>
                 </article>
             </main>
+
+            <!-- modal -->
+            <article id="login">
+                <section>
+                    <h4>로그인</h4>
+                    <ul class="login01">
+                        <li class="loginId">
+                            <input type="text" placeholder="아이디를 입력하세요. *">
+                        </li>
+                        <li class="loginPw">
+                            <input type="password" placeholder="비밀번호를 입력하세요. *">
+                        </li>
+                    </ul>
+                    <p>
+                        <button>로그인</button>
+                    </p>
+                    <ul class="login02">
+                        <li><a href="">회원가입하기</a></li>
+                        <li><a href="">아이디/비밀번호 찾기</a></li>
+                    </ul>
+                </section>
+                <p class="close">
+                    <span></span>
+                    <span></span>
+                </p>
+            </article>
+
+            <article id="join">
+                <section>
+                    <h4>회원가입</h4>
+                    <ul>
+                        <li>
+                            <label for="userId">아이디</label>
+                            <input type="text" id="userId">
+                            <span>(영문소문자/숫자, 4~16자)</span>
+                        </li>
+                        <li>
+                            <label for="userPW">비밀번호</label>
+                            <input type="password" id="userPW">
+                            <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</span>
+                        </li>
+                        <li>
+                            <label for="userPW2">비밀번호 확인</label>
+                            <input type="password" id="userPW2">
+                        </li>
+                        <li>
+                            <label for="userEmail">이메일</label>
+                            <input type="text" id="userEmail">
+                            <span>@</span>
+                            <select name="Email" id="userEmail">
+                                <option>gmail.com</option>
+                                <option>naver.com</option>
+                                <option>nate.com</option>
+                                <option>daum.com</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="userPhone">휴대전화</label>
+                            <input type="tel" id="userPhone">
+                            <button>인증번호 전송</button>
+                        </li>
+                        <li>
+                            <label for="userBirth">생일</label>
+                            <input type="date" id="userBirth">
+                        </li>
+                        <li>
+                            <label for="userName">닉네임</label>
+                            <input type="text" id="userName">
+                        </li>
+                        <li>
+                            <input type="checkbox" id="userCheck02">
+                            <label for="userCheck02">이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</label>
+                        </li>
+                    </ul>
+                    <p>
+                        <button>회원가입 하기</button>
+                    </p>
+                    </section>
+                <p class="close">
+                    <span></span>
+                    <span></span>
+                </p>
+            </article>
+
+            <article id="interest">
+                        
+            </article>
+
+            <article id="basket">
+                
+            </article>
+
+
+
+
+
+
+
 
         <!-- footer -->
         <footer>
           <div>
-            <div class="footer01">
+            <section class="footer01">
                 <p>고객센터 이용안내</p>
             <dl>
                 <dt>운영시간 : </dt>
@@ -509,17 +612,17 @@
                 <dt>본사 전화번호 : </dt>
                 <dd>00-000-0000</dd>
             </dl>
-            </div>
+            </section>
             
-            <div class="footer02">
+            <section class="footer02">
                 <ul>
                     <li><a href="#">시코르 소개</a></li>
                     <li><a href="#">1:1 문의</a></li>
                     <li><a href="#">매장 안내</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="footer03">
+            <section class="footer03">
                 <p>SNS</p>
                 <dl>
                     <dt>
@@ -535,10 +638,10 @@
                     </dt>
                     <dd><a href="">@chicor.shinsegae</a></dd>
                 </dl>
-            </div>
+            </section>
         </div>
         <div>
-            <div class="footer04">
+            <section class="footer04">
                 <dl>
                     <dt>(주)신세계 사업자등록번호 : </dt>
                     <dd>201-81-32195</dd>
@@ -548,17 +651,14 @@
                     <dd>(주)신세계아이앤씨 </dd>
                 </dl>
                 <small>&copy;2020 SHINSEGAE ALL RIGHTS RESERVED</small>
-            </div>
+            </section>
         </div>
-            
-          
-            
         </footer>
 
                 <!-- aside -->
                 <aside>
                     <h4 class="hide">상단바</h4>
-                    <p class="top"><a href="#wrap">↑</a></p>
+                    <p class="top"><a href="#wrap">top</a></p>
                 </aside>
     </div>
 </body>
