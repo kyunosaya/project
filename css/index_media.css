@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 신경X auto, 50%, 25%, 33.3333% */
+
+@media screen and (min-width:1210px){
+    header>div,nav>div,article>div,article>section,footer>div{
+        width:1200px;
+    }
+    nav>div>ul>li>div>ul{
+        width:1200px;
+    }
+    #box03>section>div{
+        width:1200px;
+    }
+    #join{
+        width:1200PX;
+    }
+}
+
+@media screen and (max-width:1209px) and (min-width:1150px){}
+
+@media screen and (max-width:1149px) and (min-width:980px){
+    #headerWrap{
+        height:104px;
+      }
+    header>div>h1{margin:0 auto;}
+    header>div>ul{
+        display: none
+      }
+      nav{
+        display: none;
+      }
+      main{
+        padding-top:103px;
+      }
+      #box01{
+        height : calc(100vh - 103px);
+      }
+}
+
+@media screen and (max-width:979px) and (min-width:580px){}
+
+@media screen and (max-width:579px) and (min-width:5px){}
+

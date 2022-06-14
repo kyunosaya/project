@@ -23,7 +23,7 @@ img{
 
 /* 공통 */
 header>div,nav>div,article>div,article>section,footer>div{
-  width:98%; /* 1200px; */
+  width:1200px;
   margin: 0 auto;
   /* background-color: pink   */
 }
@@ -108,7 +108,7 @@ nav>div>ul{
 
 }
 nav>div>ul>li{
-padding: 0 100px 0;
+padding: 0 110px 0;
 /* position:relative; */
 }
 nav>div>ul>li>a{
@@ -129,7 +129,7 @@ nav>div>ul>li>div{
 }
 nav>div>ul>li>div>ul{
   /* position: relative; */
-  width:98%; /* 1200px; */
+  width:1200px;
   margin: 0 auto;
   background-color: rgb(42, 238, 101);
 }
@@ -177,9 +177,8 @@ main{
 #box01{
   position: relative;
   overflow: hidden;
-  /* height : 1000px; */
-  height : calc(100vh - 194px);
-  /* background-size: 100%; */
+  height : 1000px;
+  /* height : calc(100vh - 194px); */
 }
 #box01>h2{
   border: solid 6px #ffffff;
@@ -306,7 +305,7 @@ dd>.goCart>button{
 }
 #box03>section>div{
   /* background-color: yellowgreen; */
-  width:98%;/* 1200px; */
+  width:1200px;
   margin:0 auto;
   /* position: absolute;
   top:110px; left:0; */
@@ -367,7 +366,7 @@ dd>.goCart>button{
   width:50%;
   float: left;
   background: url('../img/intro06.png') no-repeat center;
-  background-size: 110%;
+  background-size: 100%;
 }
 #box04>div>section.no02{
   float:right;
@@ -375,8 +374,8 @@ dd>.goCart>button{
 #box04>div>div.no03{
   width:50%;
   float: right;
-  background: url('../img/intro07.png') no-repeat right center;
-  background-size: 110%;
+  background: url('../img/intro07.png') no-repeat center;
+  background-size: 100%;
 }
 #box04>div>section.no04{
   float:left;
@@ -760,7 +759,7 @@ aside>p>a{
 #join{
   /* background-color: red; */
   background-color: #FFFDF9;
-  width:98%;/* 1200px; */
+  width:1200px;
   box-sizing: border-box;
   padding:60px;
   overflow: hidden;
