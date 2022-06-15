@@ -88,7 +88,7 @@ nav{
   position:relative;
 }
 nav>div{
-  width:100%;
+  /* width:100%; */
   /* background-color: aquamarine; */
   display: flex;
   flex-wrap:wrap;
@@ -102,13 +102,14 @@ li.hiddenMobile{
 nav>div>h2{}
 nav>div>h2>img{}
 nav>div>ul{
+  width:100%;
   display: flex;
   justify-content:space-between;
   padding: 30px 0;
-
+  margin:0 auto;
 }
 nav>div>ul>li{
-padding: 0 100px 0;
+padding: 0 8.333333333333333% /* 100px */ 0;
 /* position:relative; */
 }
 nav>div>ul>li>a{
@@ -119,7 +120,7 @@ nav>div>ul>li>span{}
 /*  */
 /*  */
 nav>div>ul>li>div{
-  display:none; /* 숨기기 */
+  /* display:none; 숨기기 */
   position: absolute;
   top:230px; left:0;
   width:100%;
@@ -298,7 +299,7 @@ dd>.goCart>button{
 /* box03 */
 #box03{}
 #box03>section{
-  width:100%; height:100%;
+  width:100%; /* height:100%; */
   background: url('../img/intro_join.png') no-repeat center top;
   background-size: 100%;
   position: relative;
