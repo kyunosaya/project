@@ -1,4 +1,4 @@
-@charset "utf-8";
+  @charset "utf-8";
 
 /* 질문
 
@@ -23,7 +23,7 @@ img{
 
 /* 공통 */
 header>div,nav>div,article>div,article>section,footer>div{
-  width:98%; /* 1200px; */
+  width:100%; /* 1200px; */
   margin: 0 auto;
   /* background-color: pink   */
 }
@@ -96,7 +96,7 @@ nav>div{
   position: relative;
   margin: 0 auto;
 }
-li.hiddenMobile{
+li.hiddenWeb{
   display: none;
 }
 nav>div>h2{}
@@ -130,9 +130,9 @@ nav>div>ul>li>div{
 }
 nav>div>ul>li>div>ul{
   /* position: relative; */
-  width:98%; /* 1200px; */
+  width:100%; /* 1200px; */
   margin: 0 auto;
-  background-color: rgb(42, 238, 101);
+  /* background-color: rgb(42, 238, 101); */
 }
 nav>div>ul>li>div>ul>li{
   float:left;
@@ -148,12 +148,13 @@ nav>div>ul>li>div>ul>li>a>img{
   width:197px;
 }
 
-/* nav>div>p.close{
+nav .close{
   position: absolute;
-  right:0; top:0;
-  width:22px; height:22px;
+  right:0; top:110px;  /* 90px:20px */
+  width:25px; height:25px;
   background-color: #595959;
-} */
+}
+nav .close>span{}
 /* p.close>span{
   display: block;
   width:25px; height:25px;
@@ -307,7 +308,7 @@ dd>.goCart>button{
 }
 #box03>section>div{
   /* background-color: yellowgreen; */
-  width:98%;/* 1200px; */
+  width:100%;/* 1200px; */
   margin:0 auto;
   /* position: absolute;
   top:110px; left:0; */
@@ -529,6 +530,7 @@ dd>.goCart>button{
 /* view */
 #view{
   /* background-color: yellowgreen; */
+  overflow: hidden;
 }
 #view>section{
   width:100%;
@@ -761,7 +763,7 @@ aside>p>a{
 #join{
   /* background-color: red; */
   background-color: #FFFDF9;
-  width:98%;/* 1200px; */
+  width:100%;/* 1200px; */
   box-sizing: border-box;
   padding:60px;
   overflow: hidden;
