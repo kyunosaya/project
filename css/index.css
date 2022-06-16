@@ -2,7 +2,8 @@
 
 /* 질문
 
-모바일, 타블렛 메뉴 어떻게 만들어야할지.
+1200(타블렛 전)아래로 갔을 때 반응형 어떻게 해야할지.
+
 */
 
 #wrap{
@@ -120,7 +121,7 @@ nav>div>ul>li>span{}
 /*  */
 /*  */
 nav>div>ul>li>div{
-  /* display:none; 숨기기 */
+  display:none; /* 숨기기 */
   position: absolute;
   top:230px; left:0;
   width:100%;
