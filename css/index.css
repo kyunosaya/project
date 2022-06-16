@@ -110,7 +110,7 @@ nav>div>ul{
   margin:0 auto;
 }
 nav>div>ul>li{
-padding: 0 8.333333333333333% /* 100px */ 0;
+padding: 0 7% /* 100px */ 0;
 /* position:relative; */
 }
 nav>div>ul>li>a{
@@ -153,7 +153,7 @@ nav .close{
   position: absolute;
   right:0; top:110px;  /* 90px:20px */
   width:25px; height:25px;
-  background-color: #595959;
+  display: none; /* 숨기기 */
 }
 nav .close>span{}
 /* p.close>span{
@@ -178,11 +178,13 @@ main{
 
 /* box01 */
 #box01{
+  width:100%;
   position: relative;
   overflow: hidden;
   /* height : 1000px; */
   height : calc(100vh - 194px);
   /* background-size: 100%; */
+  margin-bottom:100px ;
 }
 #box01>h2{
   border: solid 6px #ffffff;
@@ -240,7 +242,9 @@ main{
 }
 
 /* box02 */
-#box02{}
+#box02{
+  padding-top: 0;
+}
 #box02>section{
   /* background-color: yellowgreen; */
 }
@@ -253,14 +257,17 @@ main{
   width:100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
 }
 #box02>section>div>figure{
-  width:270px; height:583px;
-  /* background-color: violet; */
+  position:relative;
+  padding-bottom:50px;
+  width:270px;
+   /* height:583px; */
   text-align: center;
   margin-bottom: 30px;
+  /* background-color:pink; */
   
 }
 #box02>section>div>figure>img{
@@ -268,7 +275,11 @@ main{
 }
 #box02>section>div>figure>figcaption{}
 #box02>section>div>figure>figcaption>dl{
-  padding: 20px 35px;
+  padding: 0 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 }
 #box02>section>div>figure>figcaption>dl>dt{
   font-size:23px;
@@ -282,9 +293,17 @@ main{
 #box02>section>div>figure>figcaption>dl>dd:nth-child(3){
   margin-bottom: 20px;
 }
-dd>.goCart>button{
+#box02>section>div>figure>figcaption>dl>dd:last-child{
+  position:absolute;
+  bottom:0; left:0;
+  width:100%;
+  /* background-color:green; */
+}
+dd>.goCart{
   width:180px;
   line-height: 45px;
+  text-align: center;
+  margin:0 auto;
   border: solid 1px #6F9475;
   background-color: #ffffff;
   color:#6F9475
@@ -292,6 +311,7 @@ dd>.goCart>button{
 #box02>section>p.goProducts{
   padding: 60px 0;
   text-align: center;
+  margin:0 auto;
   font-size:27px;
 }
 #box02>section>p.goProducts>a{
@@ -299,18 +319,20 @@ dd>.goCart>button{
 }
 
 /* box03 */
-#box03{}
-#box03>section{
-  width:100%; /* height:100%; */
+#box03{
+  width:100%;
   background: url('../img/intro_join.png') no-repeat center top;
-  background-size: 100%;
+  background-size: auto 100%;
+  padding-bottom:100px
+}
+#box03>section{
+  /* background-color: yellowgreen; */
   position: relative;
-  padding: 120px 0;
 }
 #box03>section>div{
-  /* background-color: yellowgreen; */
   width:100%;/* 1200px; */
   margin:0 auto;
+  padding-left: 30px;
   /* position: absolute;
   top:110px; left:0; */
 }
@@ -343,55 +365,57 @@ dd>.goCart>button{
 }
 
 /* box04 */
-#box04{overflow: hidden;}
+#box04{}
 #box04>div{
   /* background-color: red */
 }
 /* 공통 */
-#box04>div>div,#box04>div>section{width:50%; height:600px;}
-#box04>div>section.no02,#box04>div>section.no04{
-  background-color:#F8F3EB;
-  padding:128px 50px;
-  text-align: center;
-  box-sizing: border-box;
+#box04>div>div{
+  width:100%;
 }
-#box04>div>section>p.goProducts, #box04>div>section>p.goPromotion{
-  width:284px;
-  line-height: 60px;
-  color:#6F9475;
-  background-color: transparent;
-  border:solid 2px #6F9475;
+#box04>div>div>section{
+  padding:118px 50px;
+  text-align: center;
+  background-color: #F8F3EB;
+}
+#box04>div>div>section>h4{
+  margin-bottom:55px;
+  font-weight: normal;
+}
+#box04>div>div>section>p:nth-child(2){
+  margin-bottom:25px
+}
+#box04>div>div>section>p:nth-child(3){
+  margin-bottom:50px;
+}
+#box04>div>div>section>p:last-child{
+  border:2px solid #6F9475;
+  width:50%;
+  line-height: 50px;
   text-align: center;
   margin: 0 auto;
 }
-#box04>div>section>p>a{color:#6F9475}
-/*  */
+#box04>div>div>section>p:last-child>a{
+  color:#6F9475
+}
+/* no01 */
 #box04>div>div.no01{
-  width:50%;
-  float: left;
-  background: url('../img/intro06.png') no-repeat center;
-  background-size: 110%;
+  padding-left:50%;
+  /* width:50%; height:600px; */
+  box-sizing: border-box;
 }
-#box04>div>section.no02{
-  float:right;
+#box04>div>div.no01{
+  background:url('../img/intro06.png') no-repeat left top;
+  background-size: contain;
 }
-#box04>div>div.no03{
-  width:50%;
-  float: right;
-  background: url('../img/intro07.png') no-repeat right center;
-  background-size: 110%;
+/* no02 */
+#box04>div>div.no02{
+  padding-right:50%;
+  box-sizing: border-box;
 }
-#box04>div>section.no04{
-  float:left;
-}
-#box04>div>section.no02>h4, #box04>div>section.no04>h4{
-  margin-bottom:55px;
-}
-#box04>div>section>p.text{
-  margin-bottom: 20px;
-}
-#box04>div>section>p.text:nth-child(3){
-  margin-bottom: 50px;
+#box04>div>div.no02{
+  background:url('../img/intro07.png') no-repeat right top;
+  background-size: contain;
 }
 
 /* box05 */
@@ -407,15 +431,19 @@ dd>.goCart>button{
   margin: 0 auto 100px;
 }
 #box05>section>div{
+  margin: 0 auto;
   /* background-color: yellowgreen; */
   display: flex;
   justify-content: space-between;
   align-items:center;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 #box05>section>div>figure{
-  margin-right:160px ;
+  /* width값 %넣기 */
+  /* margin-right:160px ; */
   margin-bottom:100px ;
+  background-color:red ;
 }
 #box05>section>div>figure:nth-child(3),#box05>section>div>figure:nth-child(6){
   margin-right:0
@@ -424,7 +452,6 @@ dd>.goCart>button{
   width:200px; height:200px;
   border:solid 5px #A1A1A1;
   border-radius: 50%;
-  margin-bottom: 15px;
 }
 #box05>section>div>figure>div.loccitaneLogo{
   background: url('../img/logo/loccitane_squarelogo.png') no-repeat center;}
