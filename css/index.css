@@ -323,8 +323,8 @@ dd>.goCart{
 /* box03 */
 #box03{
   width:100%;
-  background: url('../img/intro_join.png') no-repeat center top;
-  background-size: auto 100%;
+  background: url('../img/intro_join.png') no-repeat left center;
+  background-size: contain 100%;
   padding-bottom:100px
 }
 #box03>section{
@@ -343,6 +343,7 @@ dd>.goCart{
   margin-bottom: 60px;
 }
 #box03>section>div>dl>dt{
+  width:fit-content;
   color:#2C2F71;
   font-size: 63px;
   line-height: 75px;
@@ -422,12 +423,12 @@ dd>.goCart{
 
 /* box05 */
 #box05{
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 #box05>section{
   border: 10px solid #A9D1B9;
-  padding:35px 120px;
   box-sizing: border-box;
+  padding:70px 0;
 }
 #box05>section>h4{
   border-bottom: 1px solid #595959;
@@ -436,25 +437,47 @@ dd>.goCart{
   margin: 0 auto 80px;
 }
 #box05>section>div{
-  /* background-color: violet; */
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin:0 auto;
 }
 #box05>section>div>figure{
-  width:27%;
+  width:33.33333%;
   text-align: center;
   /* background-color: pink; */
   margin-bottom:30px ;
-  background-color: turquoise;
+  /* background-color: turquoise; */
 }
 #box05>section>div>figure>div{
-  width:100%; height:100%;
-  background: url('../img/logo/thebodyshop_squarelogo.png') no-repeat center;
-  margin-bottom: 5px;
-  background-size: 100% auto;
+  width:200px; height:200px;
+  background-size: 100%;
   border-radius: 50%;
-  border:5px solid #a1a1a1
+  border:5px solid #a1a1a1;
+  margin:0 auto 10px;
+}
+#box05>section>div>figure>div.loccitaneLogo{
+  background: url('../img/logo/loccitane_squarelogo.png') no-repeat center;
+  background-size: 100%;
+}
+#box05>section>div>figure>div.thebodyshopLogo{
+  background: url('../img/logo/thebodyshop_squarelogo.png') no-repeat center;
+  background-size: 100%;
+}
+#box05>section>div>figure>div.kamillLogo{
+  background: url('../img/logo/kamill_squarelogo.png') no-repeat center;
+  background-size: 100%;
+}
+#box05>section>div>figure>div.frudiaLogo{
+  background: url('../img/logo/frudia_squarelogo.png') no-repeat center;
+  background-size: 100%;
+}
+#box05>section>div>figure>div.onhopeLogo{
+  background: url('../img/logo/onhope_squarelogo.png') no-repeat center;
+  background-size: 100%;
+}
+#box05>section>div>figure>div.duftanddoftLogo{
+  background: url('../img/logo/DAD_squarelogo.png') no-repeat center;
+  background-size: 100%;
 }
 
 
@@ -512,20 +535,105 @@ dd>.goCart{
 } */
 
 
+/* box06 */
 #box06{}
 #box06>div{
   width:100%;
+}
+#box06>div>div{
+  /* width:100%; */
+  display: flex;
+  justify-content: space-between;
+}
+#box06>div>div>section{
+  width:50%;
+}
+/* addition01  */
+#box06>div>div>section.addition01{
+  background-color: #ECE2C8;
+  box-sizing: border-box; 
+  padding:30px 20px 30px 10%; 
+  position: relative;
+}
+#box06>div>div>section.addition01>h4{
+  color:#644A33;
+  font-weight: normal;
+  margin-bottom: 50px;
+  text-align: left;
+}
+#box06>div>div>section.addition01>p{
+  width:100%;
+  text-align: left;
+}
+#box06>div>div>section.addition01>p>input[type="text"]{
+  width:50%;
+  border:none;
+  background-color: transparent;
+  border-bottom: 1px solid #595959;
+  margin-bottom: 30px;
+}
+#box06>div>div>section.addition01>p.send{
+  width:130px;
+  color:#644A33;
+  background-color: #ffffff;
+  border:3px solid #644A33;
+  line-height: 39px;
+  text-align: center;
+  position: absolute;
+  right:10%; top:50%;
+}
+
+/* addition02 */
+#box06>div>div>section.addition02{
+  background-color: #A9D1B9;
+  padding:30px 10% 30px 20px;
+  box-sizing: border-box;
+}
+#box06>div>div>section.addition02>h4{
+  color:#ffffff;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+#box06>div>div>section.addition02>p{
+  color:#ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#box06>div>div>section.addition02>p.goStore{
+  width:215px;
+  line-height: 55px;
+  border:solid 1px #ffffff;
+  color:white;
+  background-color: transparent;
+  text-align: center;
+  margin:0 auto;
+}
+#box06>div>div>section.addition02>p.goStore>a{
+  color:#ffffff
+}
+
+
+
+
+
+
+
+
+
+
+/* #box06>div{
+  width:100%;
   height: 350px;
   box-sizing: border-box;
-  /* display: flex;
-  flex-wrap: nowrap; */
+  display: flex;
+  flex-wrap: nowrap;
 }
 #box06>div>section{
   width:50%;
  height: 100%;
  }
 
- /* addition01 */
+addition01 
 #box06>div>section.addition01{
   background-color: #ECE2C8;
   box-sizing: border-box;
@@ -561,7 +669,7 @@ dd>.goCart{
   right:10%; bottom:30%;
 }
 
-/* addition02  */
+addition02
 #box06>div>section.addition02{
   background-color: #A9D1B9;
   padding:30px 10% 30px 20px;
@@ -589,7 +697,7 @@ dd>.goCart{
 }
 #box06>div>section.addition02>p.goStore>a{
   color:#ffffff
-}
+} */
 
 
 
@@ -681,8 +789,8 @@ dd>.goCart{
 
 /* view */
 #view{
+  /* width:100%; */
   /* background-color: yellowgreen; */
-
 }
 #view>section{
   width:100%;
@@ -694,16 +802,66 @@ dd>.goCart{
   color:#407A1D;
   margin-bottom: 63px;
 }
-#view>section>ul{
-  width:3800px;
+#view>section>div{
+  width:300%;
+  /* background-color: yellowgreen; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start
+  justify-content: space-around;
+
+}
+#view>section>div>figure{
+  /* background-color: violet; */
+  position: relative;
+  width:6.578947368421053%;
+}
+#view>section>div>figure>img{
+  border: 1px solid #dfdfdf;
+  margin-bottom: 15px;
+}
+#view>section>div>figure>figcaption{}
+#view>section>div>figure>figcaption>dl{}
+#view>section>div>figure>figcaption>dl>dt{
+  font-size:24px;
+  margin-bottom: 30px;
+}
+#view>section>div>figure>figcaption>dl>dd:nth-child(2){
+  margin-bottom: 20px;
+}
+#view>section>div>figure>figcaption>dl>dd:nth-child(3){
+  color:#407A1D;
+  font-size: 15px;
+  position: absolute;
+  bottom:0; right:0;
+}
+
+
+
+
+/* #view{
+  /* background-color: yellowgreen;
+
+}
+#view>section{
+  width:100%;
+  /* background-color: turquoise;
+  padding: 55px 0 156px;
+    /* overflow: hidden;
+}
+#view>section>h4{
+  color:#407A1D;
+  margin-bottom: 63px;
+}
+#view>section>ul{
+  width:200%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
 }
 #view>section>ul>li{
-  width:250px;
-  /* background-color: tomato; */
-  padding: 16px 65px 20px;
+  /* width:250px; */
+  /* background-color: tomato;
+  padding: 16px 0 20px;
   position: relative;
 }
 #view>section>ul>li>figure{}
@@ -726,8 +884,8 @@ dd>.goCart{
   color:#407A1D;
   font-size: 15px;
   position: absolute;
-  bottom:0; right:65px;
-}
+  bottom:0; right:0;
+} */
 
 
 
@@ -750,30 +908,35 @@ footer>div:nth-child(2){
   text-align: center;
 }
   /* footer01 */
-footer>div>section.footer01{
-  padding-right:140px ;
-  border-right: 1px solid #ffffff;
-}
+footer>div>section.footer01{}
+
 footer>div>section>p{
   font-size: 18px;
   margin-bottom: 10px;
 }
-footer>div>section.footer01>dl{
-  width:262px;
-  box-sizing: border-box;
-  border:1px solid #ffffff;
+footer>div>section.footer01>div{
+  border: 1px solid #ffffff;
   padding:15px 25px;
 }
-footer>div>section.footer01>dl>dt{
+footer>div>section.footer01>div>dl{
+  box-sizing: border-box;
+}
+footer>div>section.footer01>div>dl>dt{
   display: inline-block;
 }
-footer>div>section.footer01>dl>dd{
+footer>div>section.footer01>div>dl>dd{
   display: inline;
 }
+footer>div>section.footer01>div>dl:nth-child(2){
+  margin-bottom:8px;
+}
+
   /* footer02 */
 footer>div>section.footer02{
-  padding-right:140px ;
+  padding-right:10% ;
+  padding-left:10% ;
   border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
 }
 footer>div>section.footer02>ul{
   padding-top:40px;
@@ -815,18 +978,41 @@ footer>div>section.footer04{
   font-size: 11px;
   padding:35px 0;
 }
-footer>div>section.footer04>dl{}
+footer>div>section.footer04>dl{
+  display: inline-block;
+}
 footer>div>section.footer04>dl>dt{
-  display: inline;
+  display: inline-block;
 }
 footer>div>section.footer04>dl>dd{
   display: inline;
   padding-right: 5px;
   border-right: 1px solid #ffffff;
 }
-footer>div>section.footer04>dl>dd:nth-child(6){
+footer>div>section.footer04>dl:nth-child(3)>dd{
   border-style:none
 }
+small{
+  display: block;
+  /* margin-bottom:25px; */
+}
+/* footer>div>section.footer04>dl:last-child{
+  margin:0 auto;
+  width:20%;
+  background-color: violet;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+footer>div>section.footer04>dl:last-child>dd{
+  border-style: none;
+}
+footer>div>section.footer04>dl:last-child>dd>a{
+
+}
+footer>div>section.footer04>dl:last-child>dd>a>img{
+  width:30px; height:30px;
+}*/
 
 /* aside */
 aside{}
@@ -916,14 +1102,15 @@ aside>p>a{
 #join{
   /* background-color: red; */
   background-color: #FFFDF9;
-  width:100%;/* 1200px; */
+  /* width:100%;1200px; */
+  width:50%;/* 1200px; */
   box-sizing: border-box;
   padding:60px;
   overflow: hidden;
   z-index: 555;
   position:absolute;
   top:50px; left:50%;
-  margin-left:-600px;
+  margin-left:-25%;
   display: none; /* 숨기기 */
 }
 #join>section{
@@ -940,6 +1127,7 @@ aside>p>a{
   padding: 30px 0;
   border-bottom: solid 1px #dfdfdf;
   border-top: solid 1px #dfdfdf;
+  /* width:100%; */
 }
 #join>section>ul>li:last-child{border-style:none}
 #join>section>ul>li>label:not([for="userCheck02"]){
@@ -948,7 +1136,7 @@ aside>p>a{
 }
 #join>section>ul>li>span{color:#ababab}
 #join>section>ul>li>input:not([type="checkbox"]){
-  width:300px;
+  width:60%;
   line-height: 20px;
   padding:10px;
   box-sizing: border-box;
@@ -969,7 +1157,7 @@ aside>p>a{
   background-color: #ffffff;
   color:#6F9475;
   font-size:36px;
-  width:440px;
+  width:100%;
 }
 
 
