@@ -1,7 +1,9 @@
 @charset "utf-8";
+/* 질문
 
+close버튼이 타블렛에서 안 뜬 이유.
+*/
 /* 신경X auto, 50%, 25%, 33.3333% */
-/* 부모요소 기준 */
 /* 비율:숫자/기준숫자*100  ex)268/980*100=27.~~~ */
 
 @media screen and (min-width:1210px){
@@ -13,9 +15,6 @@
     }
     #box03>section>div{
         width:1200px;
-    }
-    #join{
-        /* width:1200PX; */
     }
 
   /*  */
@@ -29,7 +28,7 @@
   }
   /* header */
 #headerWrap{
-  height:104px;
+  height:0px;
 }
 header>div{
   display: block;
@@ -43,7 +42,7 @@ header>div>ul{
 nav{
   width:350px; height:100%;
   position:fixed;
-  right:-350px; 
+  right:-350px;  /* 숨기기 */
   /* right:0; */
   top:0;
   padding:0 40px;
@@ -52,10 +51,12 @@ nav{
 }
 nav>div{
   display: block;
-  /* background-color: yellowgreen; */
 }
 li.hiddenWeb{
   display: block;
+}
+.hiddenTablet{
+  display:none
 }
 nav>div>ul{
   width:100%;
@@ -64,13 +65,19 @@ nav>div>ul{
   justify-content:center;
 }
 nav>div>ul>li{
-padding: 0 ;
-border-top:1px solid #dfdfdf;
-position: relative;
+  padding: 0 ;
+  border-top:1px solid #dfdfdf;
+  position: relative;
 }
 nav>div>ul>li>a{
   color: #595959;
   line-height: 45px;
+}
+nav .close{
+  position: absolute;
+  right:0; top:0;  /* 90px+20px */
+  width:25px; height:25px;
+  display: none; /* 숨기기 */
 }
 /* 회원정보 */
 nav>div>ul>li>ul{
@@ -113,20 +120,36 @@ main{
   padding-top:104px;
 }
 
-/* 0304-1:48:00 */
 /* box01 */
 #box01{
   height :100vh;
 }
 #box01>h2{
-  border: none;
-  font-size:81px;
-  width:100%; 
-  top:50%; left:0;
-  margin:-227px 0 0 0;
+  border-style:none;
+  font-size:10vw;
+  line-height:150%;
+  width:65vw; height:50vh;
+  position:absolute;
+  top:50%; left:50%;
+  margin:-25vh 0 0 -32.5vw;
+  color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
 }
 #box01>ul>li{
   background-size: auto 100%;
+}
+#box01>p.prev{
+  width:6%; height: auto;
+  position:absolute;
+  top:45%; left:10px;
+}
+#box01>p.next{
+  width:6%; height: auto;
+  position:absolute;
+  top:45%; right:10px;
 }
 
 /* box02 */
@@ -150,7 +173,7 @@ dd>.goCart{
 
 /* 공통 */
 #box04>div>div>section{
-  padding:50px 25px;  
+  padding:20px; 
 }
 #box04>div>div>section>h4{
   margin-bottom:15px;
@@ -158,6 +181,10 @@ dd>.goCart{
 #box04>div>div>section>p:nth-child(3){
   margin-bottom:25px;
 }
+#box04>div>div>section>p:last-child{
+  width:70%;
+}
+
 
 /* box05 */
 #box05>section{
@@ -166,36 +193,10 @@ dd>.goCart{
 #box05>section>div>figure{
   width:33.33333%;
   text-align: center;
-  /* background-color: pink; */
   margin-bottom:30px ;
-  /* background-color: turquoise; */
 }
 #box05>section>div>figure>div{
   width:130px; height:130px; 
-  background-size: 10%;
-}
-#box05>section>div>figure>div.loccitaneLogo{
-  background: url('../img/logo/loccitane_squarelogo.png') no-repeat center;
-  background-size: contain;
-}
-#box05>section>div>figure>div.thebodyshopLogo{
-  background-size: contain;
-}
-#box05>section>div>figure>div.kamillLogo{
-  background: url('../img/logo/kamill_squarelogo.png') no-repeat center;
-  background-size: contain;
-}
-#box05>section>div>figure>div.frudiaLogo{
-  background: url('../img/logo/frudia_squarelogo.png') no-repeat center;
-  background-size: contain;
-}
-#box05>section>div>figure>div.onhopeLogo{
-  background: url('../img/logo/onhope_squarelogo.png') no-repeat center;
-  background-size: contain;
-}
-#box05>section>div>figure>div.duftanddoftLogo{
-  background: url('../img/logo/DAD_squarelogo.png') no-repeat center;
-  background-size: contain;
 }
 
 
@@ -236,7 +237,6 @@ dd>.goCart{
   width:400%;
 }
 #view>section>div>figure{
-  /* background-color: violet; */
   position: relative;
   width:6.578947368421053%;
 }
@@ -253,13 +253,8 @@ dd>.goCart{
 /* footer */
 footer>div:nth-child(1){
   display: block;
-  /* flex-wrap: wrap;
-  justify-content: space-around; */
 }
-/* footer>div:nth-child(2){
-  width:100%;
-  text-align: center;
-} */
+
   /* footer01 */
 footer>div>section.footer01{
   text-align: center;
@@ -294,15 +289,12 @@ footer>div>section.footer01>div{
     margin-bottom:25px;
   }
   footer>div>section.footer04>dl:last-child{
-    margin:0 auto;
-    width:20%;
     display: flex;
     justify-content: space-between;
   }
   footer>div>section.footer04>dl:last-child>dd{
     border-style: none;
   }
-  footer>div>section.footer04>dl:last-child>dd>a{}
   footer>div>section.footer04>dl:last-child>dd>a>img{
     width:30px; height:30px;
   }
@@ -311,14 +303,119 @@ footer>div>section.footer01>div{
   display: none;
 }
 
-
-
-
   /*  */
 }
+
+
 
 @media screen and (max-width:579px) and (min-width:5px){
-
-  /*  */
+  header>div,nav>div,article>div,article>section,footer>div{
+    width:95vw
+  }
+  /* header */
+header{
+  position: fixed;
+}
+#headerWrap{
+  height:0px;
+}
+header>div{
+  display: block;
+  text-align: center;
+}
+h1 img{
+  width: 130px; 
+}
+header>div>ul{
+  display: none;
 }
 
+/* nav */
+nav{
+  width:100%; height:100%;
+  position:fixed;
+  right:-100%; 
+  /* right:0; */
+  top:0;
+  padding:0 40px;
+  box-sizing: border-box;
+}
+nav>div{
+  display: block;
+}
+li.hiddenWeb{
+  display: block;
+}
+nav>div>ul{
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content:center;
+}
+nav>div>ul>li{
+  padding: 0 ;
+  border-top:1px solid #dfdfdf;
+  position: relative;
+}
+nav>div>ul>li>a{
+  color: #595959;
+  line-height: 45px;
+}
+/* 회원정보,브랜드소개 */ */
+nav>div>ul>li>ul{
+  text-indent: 15px;
+}
+nav>div>ul>li>ul>li>a{
+  line-height: 40px;
+  color:#595959;
+  font-size:15px;
+}
+
+
+/* main */
+main{
+  padding-top:76.953px;
+}
+/* box01 */
+#box01{
+  width:100%;
+  height : calc(100vh - 76.953px);
+  position: relative;
+  overflow: hidden;
+  margin-bottom:100px ;
+}
+#box01>h2{
+  border-style:none;
+  font-size:10vw;
+  line-height:150%;
+  width:60vw; height:20vh;
+  top:50%; left:50%;
+  margin:-10vh 0 0 -30vw;
+  color:#ffffff;
+}
+#box01>ul>li{
+  background-size: auto 100%;
+}
+#box01>.picNav{
+  display: none;
+}
+#box01>p.prev{
+  width:6%; height: auto;
+  position:absolute;
+  top:45%; left:10px;
+}
+#box01>p.next{
+  width:6%; height: auto;
+  position:absolute;
+  top:45%; right:10px;
+}
+
+
+
+
+
+
+
+
+
+}
