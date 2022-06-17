@@ -2,7 +2,9 @@
 
 /* 질문
 
-1200(타블렛 전)아래로 갔을 때 반응형 어떻게 해야할지.
+box05,box06 반응형
+box05는 height값 어떻게 줘야할지.
+box06은 height값 안 넣으면 길이가 달려지고 div에 적용하려고해도 잘 안됨.
 
 */
 
@@ -419,10 +421,47 @@ dd>.goCart{
 }
 
 /* box05 */
-#box05{}
+#box05{
+  background-color: yellowgreen;
+}
 #box05>section{
   border: 10px solid #A9D1B9;
-  padding:35px 113px 0px;
+  padding:35px 120px;
+  box-sizing: border-box;
+}
+#box05>section>h4{
+  border-bottom: 1px solid #595959;
+  width:190px;
+  text-align: center;
+  margin: 0 auto 80px;
+}
+#box05>section>div{
+  /* background-color: violet; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#box05>section>div>figure{
+  width:27%;
+  text-align: center;
+  /* background-color: pink; */
+  margin-bottom:30px ;
+  background-color: turquoise;
+}
+#box05>section>div>figure>div{
+  width:100%; height:100%;
+  background: url('../img/logo/thebodyshop_squarelogo.png') no-repeat center;
+  margin-bottom: 5px;
+  background-size: 100% auto;
+  border-radius: 50%;
+  border:5px solid #a1a1a1
+}
+
+
+/* #box05{}
+#box05>section{
+  border: 10px solid #A9D1B9;
+  padding:35px 128px 35px;
   box-sizing: border-box;
 }
 #box05>section>h4{
@@ -431,30 +470,33 @@ dd>.goCart{
   margin: 0 auto 100px;
 }
 #box05>section>div{
+  width:100%; height:100%;
+  box-sizing: border-box;
   margin: 0 auto;
-  /* background-color: yellowgreen; */
   display: flex;
   justify-content: space-between;
-  align-items:center;
   flex-wrap: wrap;
-  flex-direction: row;
+  background-color: yellowgreen;
 }
 #box05>section>div>figure{
-  /* width값 %넣기 */
-  /* margin-right:160px ; */
-  margin-bottom:100px ;
+ width값 %넣기
+  width: 30%; height:100%;
+  box-sizing: border-box;
+ margin-right:160px ;
   background-color:red ;
 }
 #box05>section>div>figure:nth-child(3),#box05>section>div>figure:nth-child(6){
   margin-right:0
 }
 #box05>section>div>figure>div{
-  width:200px; height:200px;
+  width:100%; height:100%;
   border:solid 5px #A1A1A1;
   border-radius: 50%;
 }
 #box05>section>div>figure>div.loccitaneLogo{
-  background: url('../img/logo/loccitane_squarelogo.png') no-repeat center;}
+  background: url('../img/logo/loccitane_squarelogo.png') no-repeat center;
+  background-size: auto 100%;
+}
 #box05>section>div>figure>div.thebodyshopLogo{
   background: url('../img/logo/thebodyshop_squarelogo.png') no-repeat center;}
 #box05>section>div>figure>div.kamillLogo{
@@ -467,25 +509,108 @@ dd>.goCart{
   background: url('../img/logo/DAD_squarelogo.png') no-repeat center;}
 #box05>section>div>figure>figcaption{
   text-align: center;
+} */
+
+
+#box06{}
+#box06>div{
+  width:100%;
+  height: 350px;
+  box-sizing: border-box;
+  /* display: flex;
+  flex-wrap: nowrap; */
+}
+#box06>div>section{
+  width:50%;
+ height: 100%;
+ }
+
+ /* addition01 */
+#box06>div>section.addition01{
+  background-color: #ECE2C8;
+  box-sizing: border-box;
+  padding:30px 20px 30px 10%;
+  float:left;
+  position: relative;
+}
+#box06>div>section.addition01>h4{
+  color:#644A33;
+  font-weight: normal;
+  margin-bottom: 100px;
+  text-align: left;
+}
+#box06>div>section.addition01>p{
+  width:100%;
+ text-align: left;
+}
+#box06>div>section.addition01>p>input[type="text"]{
+  width:50%;
+  border:none;
+  background-color: transparent;
+  border-bottom: 1px solid #595959;
+  margin-bottom: 30px;
+}
+#box06>div>section.addition01>p.send{
+  width:130px;
+  color:#644A33;
+  background-color: #ffffff;
+  border:3px solid #644A33;
+  line-height: 39px;
+  text-align: center;
+  position: absolute;
+  right:10%; bottom:30%;
 }
 
-/* box06 */
-#box06{
-  /* background-color: #2C2F71; */
+/* addition02  */
+#box06>div>section.addition02{
+  background-color: #A9D1B9;
+  padding:30px 10% 30px 20px;
+  box-sizing: border-box;
+ float:right
+}
+#box06>div>section.addition02>h4{
+  color:#ffffff;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+#box06>div>section.addition02>p{
+  color:#ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#box06>div>section.addition02>p.goStore{
+  width:215px;
+  line-height: 55px;
+  border:solid 1px #ffffff;
+  color:white;
+  background-color: transparent;
+  text-align: center;
+  margin:0 auto;
+}
+#box06>div>section.addition02>p.goStore>a{
+  color:#ffffff
+}
+
+
+
+
+/* #box06{
+   background-color: #2C2F71;
   overflow: hidden;
   margin-bottom: 0;
 }
 #box06>div{
   width:100%;
-}
+} */
 /* 공통 */
-#box06>div>section{
+/* #box06>div>section{
   width:50%; height: 450px;
   box-sizing: border-box;
-  padding:128px 40px; 
+  padding:12px 40px; 
 }
-#box06>div>section>div{
-  width:600px;
+#box06>div>section{
+  width:40vw;
+  background-color: yellowgreen;
 }
 
 #box06>div>section.addition01{
@@ -494,22 +619,22 @@ dd>.goCart{
   position: relative;
 }
 
-#box06>div>section.addition01>div{
+#box06>div>section.addition01{
   float:right
 }
-#box06>div>section.addition01>div>h4{
+#box06>div>section.addition01>h4{
   color:#644A33;
   margin-bottom: 100px;
   font-weight: normal;
 }
-#box06>div>section.addition01>div>p>input[type="text"]{
+#box06>div>section.addition01>p>input[type="text"]{
   width:336px;
   border:none;
   background-color: transparent;
   border-bottom: 1px solid #595959;
   margin-bottom: 15px;
 }
-#box06>div>section.addition01>div>p>input[type="checkbox"]{}
+#box06>div>section.addition01>p>input[type="checkbox"]{}
 
 #box06>div>section.addition01>p>button{
   width:130px;
@@ -532,38 +657,38 @@ dd>.goCart{
   text-align: center;
   position: relative;
 }
-#box06>div>section.addition02>div{
+#box06>div>section.addition02{
   color:white
 }
-#box06>div>section.addition02>div>h4{
+#box06>div>section.addition02>h4{
   margin-bottom:22px;
   font-weight: normal;
 }
-#box06>div>section.addition02>div>p.text{
+#box06>div>section.addition02>p.text{
   margin-bottom: 22px;
 }
 #box06>div>section.addition02>p.goStore{}
 #box06>div>section.addition02>p.goStore>button{
+  clear: both;
   width:215px;
   line-height: 55px;
   border:solid 1px #ffffff;
   color:white;
   background-color: transparent;
-  position: absolute;
-  top:292px; left:25%;
-}
+} */
 
 
 
 /* view */
 #view{
   /* background-color: yellowgreen; */
-  overflow: hidden;
+
 }
 #view>section{
   width:100%;
   /* background-color: turquoise; */
   padding: 55px 0 156px;
+    overflow: hidden;
 }
 #view>section>h4{
   color:#407A1D;

@@ -157,45 +157,7 @@ dd>.goCart{
 }
 
 /* box05 */
-#box05{}
-#box05>section{
-  border: 10px solid #A9D1B9;
-  padding:35px 50px 0px;
-  box-sizing: border-box;
-}
-#box05>section>h4{
-  width:190px;
-  border-bottom:1px solid #595959;
-  margin: 0 auto 100px;
-}
-#box05>section>div>figure{
-  /* margin-right:160px ; */
-  margin-bottom:100px ;
-}
-#box05>section>div>figure:nth-child(3),#box05>section>div>figure:nth-child(6){
-  margin-right:0
-}
-#box05>section>div>figure>div{
-  width:200px; height:200px;
-  border:solid 5px #A1A1A1;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-#box05>section>div>figure>div.loccitaneLogo{
-  background: url('../img/logo/loccitane_squarelogo.png') no-repeat center;}
-#box05>section>div>figure>div.thebodyshopLogo{
-  background: url('../img/logo/thebodyshop_squarelogo.png') no-repeat center;}
-#box05>section>div>figure>div.kamillLogo{
-  background: url('../img/logo/kamill_squarelogo.png') no-repeat center;}
-#box05>section>div>figure>div.frudiaLogo{
-  background: url('../img/logo/frudia_squarelogo.png') no-repeat center;}
-#box05>section>div>figure>div.onhopeLogo{
-  background: url('../img/logo/onhope_squarelogo.png') no-repeat center;}
-#box05>section>div>figure>div.duftanddoftLogo{
-  background: url('../img/logo/DAD_squarelogo.png') no-repeat center;}
-#box05>section>div>figure>figcaption{
-  text-align: center;
-}
+
 
 
 
