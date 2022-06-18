@@ -312,6 +312,17 @@ footer>div>section.footer01>div{
   header>div,nav>div,article>div,article>section,footer>div{
     width:95vw
   }
+  #box02,#box03,#box04,#box05,#box06{
+    padding-top: 10vw;
+    margin-bottom: 10vw;
+  }
+  h3,h4{
+    font-size: 10vw;
+    line-height:20vw;
+  }
+  p.title{
+    /* font-size:36px; */
+  }
   /* header */
 header{
   position: fixed;
@@ -376,6 +387,7 @@ nav>div>ul>li>ul>li>a{
 main{
   padding-top:76.953px;
 }
+
 /* box01 */
 #box01{
   width:100%;
@@ -410,8 +422,50 @@ main{
   top:45%; right:10px;
 }
 
-
-
+/* box02 */
+#box02{
+  padding-top: 0;
+}
+#box02>section>h3{
+  width:fit-content;
+  font-size:10vw;
+  margin:0 auto 12vw;
+  line-height:12vw;
+}
+#box02>section>div{
+  justify-content: space-around;
+}
+#box02>section>div>figure{
+  padding-bottom:10vw;
+  width:39.6551724137931vw;
+  margin-bottom: 10vw;
+}
+#box02>section>div>figure>figcaption>dl{
+  padding: 0;
+}
+#box02>section>div>figure>figcaption>dl>dt{
+  font-size:7vw;
+  line-height: 14vw;
+  margin-bottom: 5px;
+}
+#box02>section>div>figure>figcaption>dl>dd{
+  font-size:6vw;
+  line-height: 12vw;
+}
+#box02>section>div>figure>figcaption>dl>dd:last-child{
+  position:absolute;
+  bottom:0; left:0;
+  width:100%;
+}
+dd>.goCart{
+  width:100%;
+  line-height: 10vw;
+  font-size:6vw;
+}
+#box02>section>p.goProducts{
+  padding: 30px 0;
+  font-size:7vw;
+}
 
 
 
