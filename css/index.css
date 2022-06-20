@@ -71,8 +71,7 @@ header>div>ul>li>a{
   border-right: solid 1px #ffffff;
   padding:0 15px 0;
 }
-p.btn{}
-p.btn>span{}
+
 
 /* nav */
 nav{
@@ -212,7 +211,7 @@ main{
   padding-top: 0;
 }
 #box02>section>h3{
-  width:230px;
+  width:fit-content;
   border-bottom: solid 1px #595959;
   margin:0 auto 70px;
 }
@@ -220,12 +219,12 @@ main{
   width:100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #box02>section>div>figure{
   position:relative;
-  padding-bottom:50px;
-  width:270px;
+  padding-bottom:80px;
+  width:22.5%;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -241,18 +240,25 @@ main{
   flex-direction: column;
 }
 #box02>section>div>figure>figcaption>dl>dt{
-  font-size:23px;
+  font-size:18px;
+  font-weight: bold;
   line-height: 35px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 #box02>section>div>figure>figcaption>dl>dd{
   line-height: 23px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 #box02>section>div>figure>figcaption>dl>dd:nth-child(3){
+  width:100%;
   margin-bottom: 20px;
+  font-size:15px;
+  position:absolute;
+  bottom:40px; right:0;
+  /* margin-bottom: ; */
 }
 #box02>section>div>figure>figcaption>dl>dd:last-child{
+  margin-bottom: 0;
   position:absolute;
   bottom:0; left:0;
   width:100%;
@@ -279,7 +285,7 @@ dd>.goCart{
 /* box03 */
 #box03{
   width:100%;
-  background: url('../img/intro_join.png') no-repeat left center;
+  background: url('../img/intro_join.png') no-repeat right center;
   background-size: contain 100%;
   padding-bottom:100px
 }
@@ -292,11 +298,12 @@ dd>.goCart{
   padding-left: 30px;
 }
 #box03>section>div>dl{
+  width:100%;
   line-height: 35px;
   margin-bottom: 60px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 #box03>section>div>dl>dt{
-  width:fit-content;
   color:#2C2F71;
   font-size: 63px;
   line-height: 75px;
@@ -326,7 +333,7 @@ dd>.goCart{
   width:100%;
 }
 #box04>div>div>section{
-  padding:118px 50px;
+  padding:133px 50px;
   text-align: center;
   background-color: #F8F3EB;
 }
@@ -356,7 +363,7 @@ dd>.goCart{
   box-sizing: border-box;
 }
 #box04>div>div.no01{
-  background:url('../img/intro06.png') no-repeat left top;
+  background:url('../img/intro06.png') no-repeat left center;
   background-size: contain;
 }
 /* no02 */
@@ -365,7 +372,7 @@ dd>.goCart{
   box-sizing: border-box;
 }
 #box04>div>div.no02{
-  background:url('../img/intro07.png') no-repeat right top;
+  background:url('../img/intro07.png') no-repeat right center;
   background-size: contain;
 }
 
@@ -649,7 +656,7 @@ small{
 }
 footer>div>section.footer04>dl:last-child{
   margin:0 auto;
-  width:20%;
+  width:15vw;
   display: none;
 }
 

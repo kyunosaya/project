@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* 질문
+
+close버튼이 타블렛에서 안 뜬 이유.
+*/
+/* 신경X auto, 50%, 25%, 33.3333% */
+/* 비율:숫자/기준숫자*100  ex)268/980*100=27.~~~ */
+
+@media screen and (min-width:1210px){
+    header>div,nav>div,article>div,article>section,footer>div{
+        width:1200px;
+    }
+    nav>div>ul>li>div>ul{
+        width:1200px;
+    }
+    #box03>section>div{
+        width:1200px;
+    }
+
+  /*  */
+}
+
+/* @media screen and (max-width:1209px) and (min-width:990px){} */
+
+/* 타블렛 */
+@media screen and (max-width:989px) and (min-width:580px){
+  header>div,nav>div,article>div,article>section,footer>div{
+    width:90vw
+  }
+  /* header */
+  header{
+    position:relative;
+  }
+#headerWrap{
+  height:0px;
+}
+header>div{
+  display: block;
+  text-align: center;
+}
+header>div>ul{
+  display: none;
+}
+p.btn{
+  width:30px; height:30px;
+  position:absolute;
+  top:50%; right:20px;
+  margin-top:-15px;
+}
+p.btn>span{ /* 공통 */
+  width:100%;
+  height:3px;
+  background-color: white;
+  position:absolute;
+}
+p.btn>span:nth-child(1){
+  top:0; left:0;
+}
+p.btn>span:nth-child(2){
+  top:50%; left:0;
+  margin-top: -1.5px;
+}
+p.btn>span:nth-child(3){
+  bottom:0; left:0;
+}
+
+/* nav */
+nav{
+  width:350px; height:100%;
+  position:fixed;
+  right:-350px;  /* 숨기기 */
+  /* right:0; */
+  top:0;
+  padding:0 40px;
+  box-sizing: border-box;
+
+}
+nav>div{
+  display: block;
+}
+li.hiddenWeb{
+  display: block;
+}
+.hiddenTablet{
+  display:none
+}
+nav>div>ul{
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content:center;
+}
+nav>div>ul>li{
+  padding: 0 ;
+  border-top:1px solid #dfdfdf;
+  position: relative;
+}
+nav>div>ul>li>a{
+  color: #595959;
+  line-height: 45px;
+}
+nav .close{
+  position: absolute;
+  right:0; top:0;  /* 90px+20px */
+  width:25px; height:25px;
+  display: none; /* 숨기기 */
+}
+/* 회원정보 */
+nav>div>ul>li>ul{
+  text-indent: 15px;
+}
+nav>div>ul>li>ul>li>a{
+  line-height: 40px;
+  color:#595959;
+  font-size:15px;
+}
+/* 브랜드소개 */
+nav>div>ul>li>div{
+  display:block;
+  position:none;
+}
+nav>div>ul>li>div>ul{
+  text-indent: 15px;
+  background-color: yellowgreen;
+}
+nav>div>ul>li>div>ul>li{
+  clear: both;
+}
+nav>div>ul>li>div>ul>li>a{
+  line-height: 40px;
+  color:#595959;
+  font-size:15px;
+}
+nav>div>ul>li>div>ul>li>a>p{
+  text-align: left
+}
+nav>div>ul>li>div>ul>li>a>img{
+  display: none;
+}
+nav .close{
+  top:20px; right:0;
+}
+
+/* main */
+main{
+  padding-top:104px;
+}
+
+} /* 타블렛 */
+
+
+/* 모바일 */
+@media screen and (max-width:579px) and (min-width:5px){
+  header>div,nav>div,article>div,article>section,footer>div{
+    width:96vw
+  }
+  #box02,#box03,#box04,#box05,#box06{
+    padding-top: 10vw;
+    margin-bottom: 10vw;
+  }
+  p.title{
+    /* font-size:36px; */
+  }
+  /* header */
+header{
+  position: fixed;
+}
+#headerWrap{
+  height:0px;
+}
+header>div{
+  display: block;
+  text-align: center;
+}
+h1 img{
+  width: 130px; 
+}
+header>div>ul{
+  display: none;
+}
+p.btn{
+  width:20px; height:20px;
+  position:absolute;
+  top:50%; right:10px;
+  margin-top:-10px;
+}
+p.btn>span{ /* 공통 */
+  width:100%;
+  height:2px;
+  background-color: white;
+  position:absolute;
+}
+p.btn>span:nth-child(1){
+  top:0; left:0;
+}
+p.btn>span:nth-child(2){
+  top:50%; left:0;
+  margin-top: -1px;
+}
+p.btn>span:nth-child(3){
+  bottom:0; left:0;
+}
+
+/* nav */
+nav{
+  width:100%; height:100%;
+  position:fixed;
+  right:-100%;  /* 숨기기 */
+  /* right:0; */
+  top:0;
+  padding:0 40px;
+  box-sizing: border-box;
+}
+nav>div{
+  display: block;
+}
+li.hiddenWeb{
+  display: block;
+}
+nav>div>ul{
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content:center;
+}
+nav>div>ul>li{
+  padding: 0 ;
+  border-top:1px solid #dfdfdf;
+  position: relative;
+}
+nav>div>ul>li>a{
+  color: #595959;
+  line-height: 45px;
+}
+/* 회원정보,브랜드소개 */
+nav>div>ul>li>ul{
+  text-indent: 15px;
+}
+nav>div>ul>li>ul>li>a{
+  line-height: 40px;
+  color:#595959;
+  font-size:15px;
+}
+nav>div>ul>li>ul>li{
+  display: none; /* 숨기기 */
+}
+
+
+/* main */
+main{
+  padding-top:50px;
+}
+}  /* 모바일 */
