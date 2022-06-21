@@ -666,6 +666,7 @@ footer>div>section.footer04>dl:last-child{
 aside>p{
   position:fixed;
   bottom:20px; right:25px;
+  z-index: 9999;
 }
 aside>p>a{
   width:50px; height:50px;

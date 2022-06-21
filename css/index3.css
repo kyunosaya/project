@@ -326,7 +326,7 @@ article>section{
   overflow: hidden;
 }
 article>section>div.top{
-  width:896px;
+  width:74.66666666666667%;
   padding:17px 8px;
   box-sizing: border-box;
   border:1px solid #dfdfdf;
@@ -363,7 +363,7 @@ article>section>div.top>p:nth-child(2){
 
 /* 검색*/
 aside.search{
-  width:260px;
+  width:21.66666666666667%;
   box-sizing: border-box;
   float:left;
   padding: 20px;
@@ -406,8 +406,8 @@ aside.search>div.brand>label>input{
   display: block;
 }
 .price>.minPrice,.price>.maxPrice{
-  width:85px; 
-  padding:2px 7px;
+  width:80px; 
+  padding:2px 5px;
   box-sizing: border-box;
   border:1px solid #595959;
   display: flex;
@@ -466,7 +466,7 @@ aside.search>div.brand>label>input{
 div.all{
   text-align:center;
   float: right;
-  width:896px;
+  width:74.66666666666667%;
   box-sizing: border-box;
   /* background-color: violet; */
   display: flex;
@@ -478,7 +478,7 @@ div.all{
 }
 div.all>div{
   /* background-color: yellowgreen; */
-  width:285px;
+  width:30%;
   box-sizing: border-box;
   margin-bottom:30px;
 }
@@ -513,7 +513,7 @@ div.all>div>figure>img{
 section>p{
   /* clear: both; */
   margin:0 auto;
-  width:896px;
+  width:74.66666666666667%;
   float:right;
   text-align: center;
 }

@@ -27,10 +27,6 @@ header>div,nav>div,article>div,article>section,footer>div{
   width:100%; /* 1200px; */
   margin: 0 auto;
 }
-#box02,#box03,#box04,#box05,#box06{
-  padding-top: 100px;
-  margin-bottom: 100px;
-}
 h3,h4{
   font-size: 36px;
   line-height: 60px;
@@ -312,16 +308,19 @@ aside>p>a{
 /* 고정 끝 */
 
 /* main */
+main{
+  padding-top: 194px
+}
 
 /* box00 */
 #box00{}
 #box00>section{
   width:100%;
-  height: 700px;
+  height: calc(100vh - 194px);
   /* background-color: yellowgreen; */
   position: relative;
-  background: url('../img/chicorpic.png') no-repeat center;
-  background-size: 100%;
+  background: url('../img/chicorpic.png') no-repeat left center;
+  background-size: cover;
   margin-bottom:17px;
 }
 #box00>section>div.logoBackground{
@@ -357,73 +356,55 @@ aside>p>a{
 }
 
 
-/* main>공통 */
-/* article>section{height:100%;} */
-article>section>div{}
-article>section>div.text>h2{
+/* 공통 */
+#box01, #box02, #box03, #box04{
+  padding-top:100px;
+  padding-bottom:100px;
+}
+article>section h2{
   font-size:36px;
   font-weight: normal;
-  height:90px;
+  margin-bottom: 30px;
+  line-height: 37px;
 }
-article>section>div.text>h2>span{
+article>section>div>div>h2>span{
   font-family: 'Joan', serif;
   font-size:27px;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 10px;
   padding:3px;
 }
-#box01,#box02,#box03,#box04{
-  padding:110px 0;
-  box-sizing: content-box;
-  overflow: hidden;
-  /* background-color: red; */
-}
 
-
-
-/* box01 */
-#box01>section{
-  width:1200px;
-  margin: 0 auto;
-  padding-left:600px;
-  box-sizing:border-box;
-  position:relative;
-  /* background-color: yellowgreen; */
-}
-#box01>section>.back{
-  position:absolute;
-  left:0; top:0;
-  height:100%;
-  width:50%;
-  background: url('../img/01_onestep.jpg') no-repeat center;
-  background-size:100%;
-}
-#box01>section>.text{
-  /* background-color: green; */
-  /* width:600px; */
-  height:480px;
-  padding:115px 0 0 60px;
+/* box01*/
+#box01>section>div{
+  width:100%;
   box-sizing: border-box;
+  padding-left: 50%;
+  background:url('../img/01_onestep.jpg') no-repeat left center;
+  background-size: 50%;
 }
-#box01>section>.text>h2:before{
+#box01>section>div>div{
+  padding:50px 10px;
+  text-align: left;
+}
+#box01>section>div>.text{
+  box-sizing: border-box;
+  padding:100px 0;
+}
+#box01>section>div>div>h2:before{
   content:'1';
   font-size:90px;
   float:left;
   line-height: 90px;
   color:#CCA7D2;
 }
-#box01>section>.text>h2{
-  clear: both;
-  margin-bottom:55px;
-}
-article>section>div.text>h2>span.color01{
+article>section>div>div>h2>span.color01{
   color:#CCA7D2;
 }
-#box01>section>div.text>p{
+#box01>section>div>div>p{
   padding-left:50px;
 }
-#box01>section>div.text>p:not(p:last-child){
+#box01>section>div>div>p:not(p:last-child){
   margin-bottom:20px
 }
 
@@ -432,154 +413,114 @@ article>section>div.text>h2>span.color01{
 #box02{
   background-color: #F0F6E3;
 }
-#box02>section{
-  width:1200px;
-  margin: 0 auto;
-  padding-right:600px;
-  box-sizing:border-box;
-  position:relative;
-  /* background-color: yellowgreen; */
-}
-#box02>section>.back{
-  position:absolute;
-  right:0; top:0;
-  height:100%;
-  width:50%;
-  background: url('../img/02_easy.jpg') no-repeat center;
-  background-size:100%;
-}
-#box02>section>.text{
-  /* background-color: green; */
-  /* width:600px; */
-  height:480px;
-  padding:85px 60px 0 0;
+#box02>section>div{
+  width:100%;
   box-sizing: border-box;
+  padding-right: 50%;
+  background:url('../img/02_easy.jpg') no-repeat right center;
+  background-size: 50%;
 }
-#box02>section>.text>h2:before{
+#box02>section>div>div{
+  padding:50px 10px;
+  text-align: right;
+}
+#box02>section>div>.text{
+  box-sizing: border-box;
+  padding:100px 0;
+}
+#box02>section>div>div>h2{
+  text-align: left;
+}
+#box02>section>div>div>h2:before{
   content:'2';
   font-size:90px;
   float:left;
   line-height: 90px;
   color:#2E8067;
 }
-#box02>section>.text>h2{
-  clear: both;
-  margin-bottom:55px;
-  padding-left: 18px;
-}
-article>section>div.text>h2>span.color02{
+article>section>div>div>h2>span.color02{
   color:#2E8067;
 }
-#box02>section>div.text>p{
+#box02>section>div>div>p{
   padding-right:50px;
-  text-align: right;
 }
-#box02>section>div.text>p:not(p:last-child){
+#box02>section>div>div>p:not(p:last-child){
   margin-bottom:20px
 }
 
 
 /* box03 */
-#box03>section{
-  width:1200px;
-  margin: 0 auto;
-  padding-left:600px;
-  box-sizing:border-box;
-  position:relative;
-  /* background-color: yellowgreen; */
-}
-#box03>section>.back{
-  position:absolute;
-  left:0; top:0;
-  height:100%;
-  width:50%;
-  background: url('../img/03_playful.jpg') no-repeat center;
-  background-size:100%;
-}
-#box03>section>.text{
-  /* background-color: green; */
-  /* width:600px; */
-  height:480px;
-  padding:55px 0 0 60px;
+#box03>section>div{
+  width:100%;
   box-sizing: border-box;
+  padding-left: 50%;
+  background:url('../img/03_playful.jpg') no-repeat left center;
+  background-size: 50%;
 }
-#box03>section>.text>h2:before{
+#box03>section>div>div{
+  padding:50px 10px;
+  text-align: left;
+}
+#box03>section>div>.text{
+  box-sizing: border-box;
+  padding:100px 0;
+}
+#box03>section>div>div>h2:before{
   content:'3';
   font-size:90px;
   float:left;
   line-height: 90px;
   color:#DCBD51;
 }
-#box03>section>.text>h2{
-  clear: both;
-  margin-bottom:55px;
-}
-article>section>div.text>h2>span.color03{
+article>section>div>div>h2>span.color03{
   color:#DCBD51;
 }
-#box03>section>div.text>p{
+#box03>section>div>div>p{
   padding-left:50px;
 }
-#box03>section>div.text>p:not(p:last-child){
+#box03>section>div>div>p:not(p:last-child){
   margin-bottom:20px
 }
 
 
-/* boc04 */
+/* box04 */
 #box04{
   background-color: #FFF6EF;
 }
-#box04>section{
-  width:1200px;
-  margin: 0 auto;
-  padding-right:600px;
-  box-sizing:border-box;
-  position:relative;
-  /* background-color: yellowgreen; */
-}
-#box04>section>.back{
-  position:absolute;
-  right:0; top:0;
-  height:100%;
-  width:50%;
-  background: url('../img/04_trendy.jpg') no-repeat center;
-  background-size:100%;
-}
-#box04>section>.text{
-  /* background-color: green; */
-  /* width:600px; */
-  height:480px;
-  padding:115px 60px 0 0;
+#box04>section>div{
+  width:100%;
   box-sizing: border-box;
+  padding-right: 50%;
+  background:url('../img/04_trendy.jpg') no-repeat right center;
+  background-size: 50%;
 }
-#box04>section>.text>h2:before{
+#box04>section>div>div{
+  padding:50px 10px;
+  text-align: right;
+}
+#box04>section>div>.text{
+  box-sizing: border-box;
+  padding:100px 0;
+}
+#box04>section>div>div>h2{
+  text-align: left;
+}
+#box04>section>div>div>h2:before{
   content:'4';
   font-size:90px;
   float:left;
   line-height: 90px;
   color:#7A4528;
 }
-#box04>section>.text>h2{
-  clear: both;
-  margin-bottom:55px;
-  padding-left:218px;
-}
-article>section>div.text>h2>span.color04{
+article>section>div>div>h2>span.color04{
   color:#7A4528;
 }
-#box04>section>div.text>p{
+#box04>section>div>div>p{
   padding-right:50px;
-  text-align: right;
 }
-#box04>section>div.text>p:not(p:last-child){
+#box04>section>div>div>p:not(p:last-child){
   margin-bottom:20px
 }
-
-
-
-
-
-
 
 
 

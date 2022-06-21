@@ -139,6 +139,29 @@ main{
   padding-top:104px;
 }
 
+/* box00 */
+#box00>section{
+  width:100%;
+  height: calc(100vh - 104px);
+  position: relative;
+  background: url('../img/chicorpic.png') no-repeat left center;
+  background-size: cover;
+  margin-bottom:17px;
+}
+#box00>section>div.logoBackground{
+  width:70vw;
+  padding:50px 50px;
+  margin: -225px 0 0 -35vw;
+}
+
+/* box01 */
+
+/* box02 */
+
+/* box03 */
+
+/* box04 */
+
   /*  */
 }
 
