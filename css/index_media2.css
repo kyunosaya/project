@@ -140,6 +140,9 @@ main{
 }
 
 /* box00 */
+#box00{
+  margin-bottom: 100px;
+}
 #box00>section{
   width:100%;
   height: calc(100vh - 104px);
@@ -150,17 +153,98 @@ main{
 }
 #box00>section>div.logoBackground{
   width:70vw;
-  padding:50px 50px;
+  padding:50px;
   margin: -225px 0 0 -35vw;
 }
 
+
+/* 공통 */
+#box01, #box02, #box03, #box04{
+  padding-top:0;
+  padding-bottom:0;
+}
+
 /* box01 */
+#box01{
+  background: url('../img/01_onestep.jpg') no-repeat center;
+  background-size: cover;
+  padding:60px 0;
+}
+#box01>section>div{
+  width:75vw;
+  padding:50px;
+  background-image: none;
+  background-color: rgba(255,255,255,0.7);
+  margin:0 auto;
+}
+#box01>section>div>div{
+  padding:0;
+}
+#box01>section>div>div>p{
+  padding-left:0px;
+}
 
 /* box02 */
+#box02{
+  background: url('../img/02_easy.jpg') no-repeat center;
+  background-size: cover;
+  padding:60px 0;
+}
+#box02>section>div{
+  width:75vw;
+  padding:50px;
+  background-image: none;
+  background-color: rgba(255,255,255,0.7);
+  margin:0 auto;
+}
+#box02>section>div>div{
+  padding:0;
+  text-align: left;
+}
+#box02>section>div>div>p{
+  padding-left:0px;
+}
 
 /* box03 */
+#box03{
+  background: url('../img/03_playful.jpg') no-repeat center;
+  background-size: cover;
+  padding:60px 0;
+}
+#box03>section>div{
+  width:75vw;
+  padding:50px;
+  background-image: none;
+  background-color: rgba(255,255,255,0.7);
+  margin:0 auto;
+}
+#box03>section>div>div{
+  padding:0;
+}
+#box03>section>div>div>p{
+  padding-left:0px;
+}
 
 /* box04 */
+#box04{
+  background: url('../img/04_trendy.jpg') no-repeat center;
+  background-size: cover;
+  padding:60px 0;
+}
+#box04>section>div{
+  width:75vw;
+  padding:50px;
+  background-image: none;
+  background-color: rgba(255,255,255,0.7);
+  margin:0 auto;
+}
+#box04>section>div>div{
+  padding:0;
+  text-align: left;
+}
+#box04>section>div>div>p{
+  padding-left:0px;
+}
 
   /*  */
 }
@@ -266,6 +350,50 @@ nav>div>ul>li>ul>li{
 main{
   padding-top:50px;
 }
+
+/* box00 */
+#box00{
+  margin-bottom: 50px;
+}
+#box00>section{
+  width:100%;
+  height: calc(100vh - 104px);
+}
+#box00>section>div.logoBackground{
+  width:90vw;
+  padding:40px;
+  box-sizing: border-box;
+  margin: -225px 0 0 -45vw;
+}
+#box00>section>div.logoBackground>h3{
+  margin-bottom: 30px;
+}
+#box00>section>div.logoBackground>h3>a>img{
+  width:100%;
+}
+#box00>section>div.logoBackground>p:nth-child(2){
+  margin-bottom: 30px;
+}
+#box00>section>div.logoBackground>p.goHome{
+  width:90%;
+  line-height: 50px;
+}
+
+
+/* 공통 */
+
+  /* box01 */
+
+
+  /* box02 */
+
+
+  /* box03 */
+
+
+  /* box04 */
+
+  
 
   /*  */
 }

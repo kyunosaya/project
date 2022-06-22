@@ -387,10 +387,6 @@ article>section>div>div>h2>span{
   padding:50px 10px;
   text-align: left;
 }
-#box01>section>div>.text{
-  box-sizing: border-box;
-  padding:100px 0;
-}
 #box01>section>div>div>h2:before{
   content:'1';
   font-size:90px;
