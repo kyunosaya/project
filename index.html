@@ -53,9 +53,9 @@
 
                             <li><a href="">시코르 소개</a></li>
 
-                            <li class="hiddenTablet">
-                                <a href="">브랜드 소개</a>
-                                <span></span>
+                            <li class="hiddenTablet" name="on">
+                                <a href="#">브랜드 소개</a>
+                                <span> ^ </span>
                             <div>
                                 <ul>
                                     <li><a href="#">
@@ -94,7 +94,7 @@
                             </li>
 
                             <li class="hiddenWeb">
-                                <a href="#">브랜드소개</a>
+                                <a href="">브랜드소개</a>
                                 <span></span>
                                 <ul>
                                     <li><a href="#">록시땅</a></li>
@@ -290,7 +290,10 @@
                                 <dd class="small">(다음 구입시 3% 적립, VIP는 5% 적립이 적용됩니다.)</dd>
                             </dl>
                         </div>
-                        <p class="goJoin"><button>회원가입 하러 가기</button></p>
+                        <p class="goJoin">
+                            <button>
+                                <a href="#wrap">회원가입 하러 가기</a>
+                            </button></p>
                     </section>
                 </article>
 
@@ -380,7 +383,9 @@
                                         이용 약관을 읽고 동의합니다.
                                     </label>
                                 </p>
-                            <p class="send">전송</p>
+                            <p class="send" onclick="alert('전송에 실패했습니다.')">
+                               전송
+                            </p>
 
                             </section>
                             
@@ -741,6 +746,121 @@
             });
         })
     </script> -->
+
+    <script>
+        $(function(){
+
+// nav
+            $('nav>div>ul>li:nth-child(4)').on('click',function(){
+                let brandName = $(this).attr('name');
+                // console.log(brandName)
+                if(brandName == 'on'){
+                    $('#headerWrap').css('height','500px');
+                    $('nav>div>ul>li>div').show();
+                    $('nav .close').show();
+                    $(this).attr('name','off');
+                }
+                else{
+                    $('#headerWrap').css('height','194px');
+                    $('nav>div>ul>li>div').hide();
+                    $('nav .close').hide();
+                    $(this).attr('name','on')
+                }
+    // close
+                $('nav .close').on('click',function(){
+                $('#headerWrap').css('height','194px');
+                $('nav>div>ul>li>div').hide();
+                $('nav .close').hide();
+                $('nav>div>ul>li:nth-child(4)').attr('name','on')
+            });
+            })
+
+// Gallery
+            //준비하기
+            let galleryWidth = $('#box01>ul>li').width();
+            $('#box01>ul>li:last').prependTo('#box01>ul');
+            $('#box01>ul').css('margin-left','-'+galleryWidth+'px');
+
+            //next
+            $('.next').stop().on('click',function(e){
+                $('#box01>ul').animate({marginLeft:'+='+galleryWidth+'px'},1000,function(){
+                    $('#box01>ul>li:last').prependTo('#box01>ul');
+                    $('#box01>ul').css('margin-left','-'+galleryWidth+'px');
+                })
+            });
+            //prev
+            $('.prev').stop().on('click',function(e){
+                $('#box01>ul').animate({marginLeft:'-='+galleryWidth+'px'},1000,function(){
+                    $('#box01>ul>li:first').appendTo('#box01>ul');
+                    $('#box01>ul').css('margin-left','-'+galleryWidth+'px');
+                })
+            });
+
+        });
+
+// #box03
+        $('#box03 button>a').on('click',function(){
+            $('#join').show();
+            $('#back').show();
+            
+            $('#join .close').on('click',function(e){
+                $('#join').hide();
+                $('#back').hide();
+            })
+        });
+
+// modal
+        //준비하기
+        $('body').append('<div id="back"></div>');
+    // login
+        $('header ul>li:first').on('click',function(e){
+            $('#login').show();
+            $('#back').show();
+            
+            $('#login .close').on('click',function(e){
+                $('#login').hide();
+                $('#back').hide();
+            })
+            return false
+        });
+    // join
+        $('header ul>li:nth-child(2)').on('click',function(e){
+            $('#join').show();
+            $('#back').show();
+            
+            $('#join .close').on('click',function(e){
+                $('#join').hide();
+                $('#back').hide();
+            })
+            return false
+        });
+
+    // interest
+        $('header ul>li:nth-child(3)').on('click',function(e){
+            $('#interest').show();
+            $('#back').show();
+            
+            $('#interest .close').on('click',function(e){
+                $('#interest').hide();
+                $('#back').hide();
+            })
+        });
+    // basket
+    $('header ul>li:last').on('click',function(e){
+            $('#basket').show();
+            $('#back').show();
+            
+            $('#basket .close').on('click',function(e){
+                $('#basket').hide();
+                $('#back').hide();
+            })
+
+// view
+
+        });/*  */
+
+
+    </script>
 
 
 </body>
