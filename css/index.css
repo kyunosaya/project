@@ -41,9 +41,10 @@ p.title{
 #headerWrap{
   width:100%;
   height:194px;
+  /* height:500px; */ /* 지금 */
   position:absolute;
   left:0; top:0px;
-  background-color:rgba(255, 255, 255, 0.8);
+  background-color:rgba(255, 255, 255, 0.9);
   z-index:400;
 }
 header{
@@ -94,20 +95,21 @@ nav>div>h2>img{}
 nav>div>ul{
   width:100%;
   display: flex;
-  justify-content:space-between;
+  flex-wrap:wrap;
   padding: 30px 0;
   margin:0 auto;
 }
 nav>div>ul>li{
-padding: 0 7% /* 100px */ 0;
+  width:25%;
+  text-align: center;
 }
 nav>div>ul>li>a{
   color: #595959;
 }
-nav>div>ul>li>div{
+nav>div>ul>li>div{ /* 지금 */
   display:none; /* 숨기기 */
   position: absolute;
-  top:230px; left:0;
+  top:200px; left:0;
   width:100%;
 }
 nav>div>ul>li>div>ul{
@@ -131,11 +133,22 @@ nav>div>ul>li>div>ul>li>a>img{
 nav .close{
   position: absolute;
   right:0; top:110px;  /* 90px+20px */
-  width:25px; height:25px;
-  background-color: pink;
-  display: none; /* 숨기기 */
+  width:35px; height:35px;
+  /* background-color: pink; */
+  display: none; /* 숨기기 */  /* 지금 */
 }
-nav .close>span{}
+nav .close>span{
+  position:absolute;
+  left:0; top:50%;
+  width:100%;height:1px;
+  background-color: #595959;
+}
+nav .close>span:first-child{
+  transform:rotate(-135deg) translateX(0%);
+}
+nav .close>span:last-child{
+  transform:rotate(-45deg) translate(0%);
+}
 
 /* main */
 main{
@@ -322,10 +335,10 @@ dd>.goCart{
   width:310px;
   line-height: 60px;
   border:solid 3px #2C2F71;
-  color:#2C2F71;
   font-size:27px;
   background-color: transparent;
 }
+#box03>section>.goJoin>button>a{color:#2C2F71;}
 
 /* box04 */
 /* 공통 */
@@ -692,7 +705,7 @@ aside>p>a{
   position:fixed;
   top:50%; left:50%;
   margin: -325px 0 0 -275px;
-  z-index: 500;
+  z-index: 666;
   display: none; /* 숨기기 */
 }
 #login>section{
@@ -740,6 +753,25 @@ aside>p>a{
 #login>section>ul.login02>li>a{
   color:#595959
 }
+#login .close{
+  position: absolute;
+  right:20px; top:20px;
+  width:40px; height:40px;
+  /* background-color: pink; */
+}
+#login .close>span{
+  position:absolute;
+  left:0; top:50%;
+  width:100%;height:1px;
+  background-color: #595959;
+}
+#login .close>span:first-child{
+  transform:rotate(-135deg) translateX(0%);
+}
+#login .close>span:last-child{
+  transform:rotate(-45deg) translate(0%);
+}
+
 
   /* join */
 #join{
@@ -748,7 +780,7 @@ aside>p>a{
   box-sizing: border-box;
   padding:60px;
   overflow: hidden;
-  z-index: 555;
+  z-index: 666;
   position:absolute;
   top:50px; left:50%;
   margin-left:-25%;
@@ -798,7 +830,24 @@ aside>p>a{
   font-size:36px;
   width:100%;
 }
-
+#join .close{
+  position: absolute;
+  right:20px; top:20px;
+  width:40px; height:40px;
+  /* background-color: pink; */
+}
+#join .close>span{
+  position:absolute;
+  left:0; top:50%;
+  width:100%;height:1px;
+  background-color: #595959;
+}
+#join .close>span:first-child{
+  transform:rotate(-135deg) translateX(0%);
+}
+#join .close>span:last-child{
+  transform:rotate(-45deg) translate(0%);
+}
 
 
 
@@ -806,3 +855,14 @@ aside>p>a{
   /* interest */
 
   /* basket */
+
+
+
+  #back{
+    width:100%; height:100%;
+    background-color: rgba(0,0,0,0.6);
+    position:fixed;
+    top:0; left:0;
+    z-index:600;
+    display: none;
+  }
