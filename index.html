@@ -126,9 +126,21 @@
                 <article id="box01">
                         <h2>CHICOR<br>HANDCREAM</a></h2>
                         <ul>
-                            <li class="pic01">프로모션</li>
-                            <li class="pic02">회원가입이벤트</li>
-                            <li class="pic03">매장 구매 이벤트</li>
+                            <li class="pic01">
+                                <a href="">
+                                    썸네일
+                                </a>
+                            </li>
+                            <li class="pic02">
+                                <a href="">
+                                    회원가입이벤트
+                                </a>
+                            </li>
+                            <li class="pic03">
+                                <a href="">
+                                    매장 구매 이벤트
+                                </a>
+                            </li>
                         </ul>
 
                         <p class="prev">
@@ -138,11 +150,12 @@
                             <img src="./img/next.png" alt="nextbutton">
                         </p>
 
-                        <p class="picNav">
-                            <a href=".pic01">no01</a>
-                            <a href=".pic02">no02</a>
-                            <a href=".pic03">no03</a>
-                        </p>
+
+                        <ol class="picNav">
+                            <li data-num="1">no01</li>
+                            <li data-num="2">no02</li>
+                            <li data-num="3">no03</li>
+                        </ol>
                 </article>
                 
                 <!-- box02 -->
@@ -510,7 +523,7 @@
                                     </figcaption>
                                 </figure>
                                 <figure>
-                                    <img src="./img/loccitane/LOC_intensive.png" alt="제품10">
+                                    <img src="./img/loccitane/LOC_intensive.png" alt="제품11">
                                     <figcaption>
                                         <dl>
                                             <dt>록시땅</dt>
@@ -520,7 +533,7 @@
                                     </figcaption>
                                 </figure>
                                 <figure>
-                                    <img src="./img/frudia/frudia_dazuling.png" alt="제품10">
+                                    <img src="./img/frudia/frudia_dazuling.png" alt="제품12">
                                     <figcaption>
                                         <dl>
                                             <dt>후르디아</dt>
@@ -667,21 +680,21 @@
                 <div>
                 <dl>
                     <dt>
-                        <a href=""><img src="./img/snslogo/youtube_white02.png" alt="youtubelogo"></a>
+                        <a href="https://www.youtube.com/channel/UCbcoJcFHnD7Qo9GHVB_yE4w"><img src="./img/snslogo/youtube_white02.png" alt="youtubelogo"></a>
                     </dt>
-                    <dd><a href="">채널 시코르 CH.CHICOR</a></dd>
+                    <dd><a href="https://www.youtube.com/channel/UCbcoJcFHnD7Qo9GHVB_yE4w">채널 시코르 CH.CHICOR</a></dd>
                 </dl>
                 <dl>
                     <dt>
-                        <a href=""><img src="./img/snslogo/instagram_white02.png" alt="instalogo"></a>
+                        <a href="https://www.instagram.com/chicor_shinsegae/"><img src="./img/snslogo/instagram_white02.png" alt="instalogo"></a>
                     </dt>
-                    <dd><a href="">@chicor_shinsegae</a></dd>
+                    <dd><a href="https://www.instagram.com/chicor_shinsegae/">@chicor_shinsegae</a></dd>
                 </dl>
                 <dl>   
                     <dt>
-                        <a href=""><img src="./img/snslogo/facebook_white02.png" alt="facebooklogo"></a>
+                        <a href="https://www.facebook.com/chicor.shinsegae/"><img src="./img/snslogo/facebook_white02.png" alt="facebooklogo"></a>
                     </dt>
-                    <dd><a href="">@chicor.shinsegae</a></dd>
+                    <dd><a href="https://www.facebook.com/chicor.shinsegae/">@chicor.shinsegae</a></dd>
                 </dl>
             </div>
             </section>
@@ -775,7 +788,7 @@
             });
             })
 
-// Gallery
+// Gallery(box01)
             //준비하기
             let galleryWidth = $('#box01>ul>li').width();
             $('#box01>ul>li:last').prependTo('#box01>ul');
@@ -796,7 +809,16 @@
                 })
             });
 
-        });
+            // nav
+            // $('.picNav>li').on('click',function(e){
+            //     // 준비하기
+            //     let num = $(this).attr('data-num');
+            //     // console.log(num)
+            //     $()
+            // });
+            
+
+ 
 
 // #box03
         $('#box03 button>a').on('click',function(){
@@ -846,7 +868,7 @@
             })
         });
     // basket
-    $('header ul>li:last').on('click',function(e){
+        $('header ul>li:last').on('click',function(e){
             $('#basket').show();
             $('#back').show();
             
@@ -854,10 +876,40 @@
                 $('#basket').hide();
                 $('#back').hide();
             })
+        });
 
 // view
+        //준비하기
+            let viewAllWidth = $('#view>section>div').width()/12;
+            // console.log(viewAllWidth);
+            $('#view>section>div').css('margin-left','-'+viewAllWidth+'px');
+        // 움직임
+        function action(){
+            $('#view>section>div').animate({marginLeft:'-='+viewAllWidth+'px'},1000,function(){
+                    $('#view>section>div>figure:first').appendTo('#view>section>div');
+                    $('#view>section>div').css('margin-left','-'+viewAllWidth+'px');
+                })
+        }
+        // 타이머
+        function timer(){
+            str = setInterval(action,3000)
+        }
+        function stop(){
+            clearInterval(str)
+        }
+        timer();
 
-        });/*  */
+        // 마우스이벤트
+        $('#view>section>div').each(function(){
+            $(this).on('mouseover',function(e){
+                stop()
+            })
+            $(this).on('mouseout',function(e){
+                timer()
+            })
+        })
+
+    }); /*  */
 
 
     </script>

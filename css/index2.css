@@ -162,6 +162,7 @@ main{
 #view>section>div>figure{
   position: relative;
   width:6.578947368421053%;
+  padding:20px;
 }
 #view>section>div>figure>img{
   border: 1px solid #dfdfdf;

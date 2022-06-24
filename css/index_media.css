@@ -273,10 +273,6 @@ dd>.goCart{
 #view>section>div{
   width:400%;
 }
-#view>section>div>figure{
-  position: relative;
-  width:6.578947368421053%;
-}
 #view>section>div>figure>img{
   margin-bottom: 15px;
 }

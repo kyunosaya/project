@@ -18,6 +18,9 @@ img{
   font-size:0; line-height:0;
   position:absolute; visibility:hidden;
 }
+a:hover{
+  cursor: pointer;
+}
 
 /* 공통 */
 header>div,nav>div,article>div,article>section,footer>div{
@@ -192,7 +195,7 @@ main{
 }
 #box01>ul>li.pic02{background: url('../img/intro02.png') no-repeat center top;}
 #box01>ul>li.pic03{background: url('../img/intro04.png') no-repeat center top;}
-#box01>.picNav{
+/* #box01>.picNav{
   width:105px;
   position:absolute;
   bottom:0; left:50%;
@@ -203,6 +206,22 @@ main{
   margin-bottom:5px;
 }
 #box01>.picNav>a{
+  width:20px; height:20px;
+  border-radius:50%;
+  background-color: #ffffff;
+  text-indent: -99999px;
+} */
+#box01>.picNav{
+  width:105px;
+  position:absolute;
+  bottom:0; left:50%;
+  margin-left:-30px;
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom:5px;
+}
+#box01>.picNav>li{
   width:20px; height:20px;
   border-radius:50%;
   background-color: #ffffff;
@@ -522,7 +541,7 @@ dd>.goCart{
 #view>section{
   width:100%;
   padding: 55px 0 156px;
-    overflow: hidden;
+  /* overflow: hidden; */
 }
 #view>section>h4{
   color:#407A1D;
@@ -538,6 +557,7 @@ dd>.goCart{
 #view>section>div>figure{
   position: relative;
   width:6.578947368421053%;
+  padding:20px;
 }
 #view>section>div>figure>img{
   border: 1px solid #dfdfdf;
