@@ -541,7 +541,7 @@ dd>.goCart{
 #view>section{
   width:100%;
   padding: 55px 0 156px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #view>section>h4{
   color:#407A1D;
@@ -873,8 +873,119 @@ aside>p>a{
 
 
   /* interest */
+    /* TOP */
+  #interest{
+    background-color: #FFFDF9;
+    /* background-color: red; */
+    width:70%;
+    padding:50px;
+    box-sizing: border-box;
+    z-index: 666;
+    position:absolute;
+    top:50px; left:50%;
+    margin-left:-35%;
+    display: none; /* 숨기기 */
+  }
+  #interest>section{
+    width:100%;
+    margin: 0 auto;
+  }
+  #interest>section>h4{
+    color:#6F9475;
+    margin-bottom: 50px;
+  }
+  #interest>section>.interestTop{
+    background-color: #F8F3EB;
+    padding: 5px 0;
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #interest>section>.interestTop>p{
+    width:20%;
+  }
+  #interest>section>.interestTop>p:first-child{
+    width:5%;
+  }
+  #interest>section>.interestTop>p:nth-child(3){
+    width:35%;
+  }
+    /* ul */
+  #interest>section>ul{
+    margin-bottom: 50px;
+  }
+  #interest>section>ul>li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  #interest>section>ul>li>p{
+    width:20%;
+    font-size: 16px;
+  }
+  #interest>section>ul>li>p:first-child{
+    width:5%;
+  }
+  #interest>section>ul>li>p:nth-child(3){
+    width:35%;
+    vertical-align: middle;
+  }
+  #interest>section>ul>li>p>img{
+    width:50%;
+    border:1px solid #DFDFDF;
+  }
+  ul>li>.button{
+    width:20%;
+  }
+  ul>li>.button button{
+    padding:3px 0;
+    width:50%;
+    color:#595959;
+    border:1px solid #595959;
+    background-color:white;
+  }
+    /* 마지막 버튼 */
+  #interest>section>div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #interest>section>div:last-child>p{
+    width:45%;
+  }
+  #interest>section>div:last-child>p>button{
+    width:100%;
+    padding:20px 0;
+    font-size:27px;
+    border: 3px solid #6F9475;
+    color:#6F9475;
+    background-color:white;
+  }
 
   /* basket */
+  #basket{
+    background-color: #FFFDF9;
+    /* background-color: red; */
+    width:70%;
+    padding:50px;
+    box-sizing: border-box;
+    z-index: 666;
+    position:absolute;
+    top:50px; left:50%;
+    margin-left:-35%;
+    /* display: none; 숨기기 */
+  }
+  #basket>section{
+    width:100%;
+    margin: 0 auto;
+  }
+  #basket>section>h4{
+    color:#6F9475;
+    margin-bottom: 50px;
+  }
 
 
 
