@@ -20,10 +20,10 @@
                         <a href="#wrap"><img src="./img/logo/chicorlogo_w.png" alt="chicorLogo"></a>
                     </h1>
                     <ul>
-                        <li><a href="">로그인</a></li>
-                        <li><a href="">회원가입</a></li>
-                        <li><a href="">관심상품</a></li> 
-                        <li><a href="">장바구니</a></li>
+                        <li><a>로그인</a></li>
+                        <li><a>회원가입</a></li>
+                        <li><a>관심상품</a></li> 
+                        <li><a>장바구니</a></li>
                     </ul>
                 </div>
                     <p class="btn">
@@ -126,7 +126,7 @@
                 <article id="box01">
                         <h2>CHICOR<br>HANDCREAM</a></h2>
                         <ul>
-                            <li class="pic01">
+                            <li class="pic01" >
                                 <a href="">
                                     썸네일
                                 </a>
@@ -661,7 +661,6 @@
                                     <button>삭제하기</button>
                                 </p>
                             </div>
-
                         </li>
                     </ul>
 
@@ -674,6 +673,10 @@
                         </p>
                     </div>
                 </section>
+                <p class="close">
+                    <span></span>
+                    <span></span>
+                </p>
             </article>
 
             <article id="basket">
@@ -693,23 +696,30 @@
                             <p>
                                 <input type="checkbox">
                             </p>
-                            <img src="./img/frudia/frudia_greenury.png" alt="관심상품01">
+                            <p>
+                                <img src="./img/frudia/frudia_greenury.png" alt="관심상품01">
+                            </p>
                             <p>리프루스트 에센셜 블렌딩 핸드크림 그리너리</p>
                             <p>
                                 <input type="text">
                             </p>
                             <p>15,000원</p>
-                            <p>
-                                <button>관심상품등록</button>
-                                <button>삭제하기</button>
-                            </p>
+                            <div class="button">
+                                <p>
+                                    <button>관심상품등록</button>
+                                </p>
+                                <p>
+                                    <button>삭제하기</button>
+                                </p>
+                            </div>
+
                         </li>
                     </ul>
 
                     <div class="allPrice">
                         <div>
                             <p>주문금액</p>
-                            <p></p>
+                            <p>155,000</p>
                             <p>원</p>
                         </div>
                         <p>배송비 2,500원이 포함된 가격입니다.</p>
@@ -724,7 +734,10 @@
                         </p>
                     </div>
                 </section>
-                
+                <p class="close">
+                    <span></span>
+                    <span></span>
+                </p>
             </article>
 
 
@@ -820,34 +833,6 @@
                 </aside>
     </div>
 
-
-
-
-
-    <!-- <script>
-        $(function(){
-            //준비하기
-            let galleryWidth = $('#box01>ul>li').width();
-            $('#box01>ul>li:last').prependTo('#box01>ul');
-            $('#box01>ul').css('margin-left','-'+galleryWidth);
-
-            //next
-            $('.next').on('click',function(e){
-                $('#box01>ul').animate({marginLeft:'+='+galleryWidth},100,function(){
-                    $('#box01>ul>li:last').prependTo('#box01>ul');
-                    $('#box01>ul').css('margin-left','-'+galleryWidth);
-                });
-            });
-            //prev
-            $('.prev').on('click',function(e){
-                $('#box01>ul').animate({marginLeft:'+='+galleryWidth},100,function(){
-                    $('#box01>ul>li:last').prependTo('#box01>ul');
-                    $('#box01>ul').css('margin-left','-'+galleryWidth);
-                });
-            });
-        })
-    </script> -->
-
     <script>
         $(function(){
 
@@ -931,7 +916,6 @@
                 $('#login').hide();
                 $('#back').hide();
             })
-            return false
         });
     // join
         $('header ul>li:nth-child(2)').on('click',function(e){
@@ -942,7 +926,6 @@
                 $('#join').hide();
                 $('#back').hide();
             })
-            return false
         });
 
     // interest
