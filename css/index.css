@@ -796,14 +796,14 @@ aside>p>a{
   /* join */
 #join{
   background-color: #FFFDF9;
-  width:50%;/* 1200px; */
+  width:60%;/* 1200px; */
   box-sizing: border-box;
   padding:60px;
   overflow: hidden;
   z-index: 666;
   position:absolute;
   top:50px; left:50%;
-  margin-left:-25%;
+  margin-left:-30%;
   display: none; /* 숨기기 */
 }
 #join>section{
@@ -877,18 +877,22 @@ aside>p>a{
   #interest{
     background-color: #FFFDF9;
     /* background-color: red; */
-    width:70%;
+    width:75%;
     padding:50px;
     box-sizing: border-box;
     z-index: 666;
     position:absolute;
     top:50px; left:50%;
-    margin-left:-35%;
+    margin-left:-37.5%;
     display: none; /* 숨기기 */
   }
   #interest>section{
     width:100%;
     margin: 0 auto;
+  }
+  #interest input{
+    width:100%;
+    box-sizing: border-box;
   }
   #interest>section>h4{
     color:#6F9475;
@@ -900,7 +904,7 @@ aside>p>a{
     display: flex;
     flex-wrap:wrap;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   #interest>section>.interestTop>p{
     width:20%;
@@ -918,31 +922,30 @@ aside>p>a{
   #interest>section>ul>li{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     text-align: center;
     border-bottom: 1px solid #DFDFDF;
   }
   #interest>section>ul>li>p{
     width:20%;
-    font-size: 16px;
+    font-size: 15px;
   }
   #interest>section>ul>li>p:first-child{
     width:5%;
   }
   #interest>section>ul>li>p:nth-child(3){
     width:35%;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
   #interest>section>ul>li>p>img{
-    width:50%;
+    width:100px;
     border:1px solid #DFDFDF;
   }
-  ul>li>.button{
+  #interest ul>li>.button{
     width:20%;
   }
-  ul>li>.button button{
+  #interest ul>li>.button button{
     padding:3px 0;
-    width:50%;
+    width:100px;
     color:#595959;
     border:1px solid #595959;
     background-color:white;
@@ -954,29 +957,47 @@ aside>p>a{
     justify-content: space-between;
   }
   #interest>section>div:last-child>p{
-    width:45%;
+    width:48%;
   }
   #interest>section>div:last-child>p>button{
     width:100%;
     padding:20px 0;
-    font-size:27px;
+    font-size:24px;
     border: 3px solid #6F9475;
     color:#6F9475;
     background-color:white;
+  }
+  #interest .close{
+    position: absolute;
+    right:20px; top:20px;
+    width:40px; height:40px;
+    /* background-color: pink; */
+  }
+  #interest .close>span{
+    position:absolute;
+    left:0; top:50%;
+    width:100%;height:1px;
+    background-color: #595959;
+  }
+  #interest .close>span:first-child{
+    transform:rotate(-135deg) translateX(0%);
+  }
+  #interest .close>span:last-child{
+    transform:rotate(-45deg) translate(0%);
   }
 
   /* basket */
   #basket{
     background-color: #FFFDF9;
     /* background-color: red; */
-    width:70%;
+    width:75%;
     padding:50px;
     box-sizing: border-box;
     z-index: 666;
     position:absolute;
     top:50px; left:50%;
-    margin-left:-35%;
-    /* display: none; 숨기기 */
+    margin-left:-37.5%;
+    display: none; /* 숨기기 */
   }
   #basket>section{
     width:100%;
@@ -986,8 +1007,114 @@ aside>p>a{
     color:#6F9475;
     margin-bottom: 50px;
   }
-
-
+  #basket>section>.basketTop{
+    background-color: #F8F3EB;
+    padding: 5px 0;
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #basket>section>.basketTop>p{
+    width:17%;
+  }
+  #basket>section>.basketTop>p:first-child{
+    width:5%;
+  }
+  #basket>section>.basketTop>p:nth-child(3){
+    width:25%;
+  }
+    /* ul */
+  #basket>section>ul{
+    margin-bottom: 50px;
+  }
+  #basket>section>ul>li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  #basket>section>ul>li>p{
+    width:17%;
+    font-size: 15px;
+  }
+  #basket>section>ul>li>p:first-child{
+    width:5%;
+  }
+  #basket>section>ul>li>p:nth-child(3){
+    width:27%;
+  }
+  #basket>section>ul>li>p:nth-child(4)>input{
+    width:80%; /* 구입수량 */
+  }
+  #basket>section>ul>li>p>img{
+    width:100px;
+    border:1px solid #DFDFDF;
+  }
+  #basket ul>li>.button{
+    width:17%;
+  }
+  #basket ul>li>.button button{
+    padding:3px 0;
+    width:100px;
+    color:#595959;
+    border:1px solid #595959;
+    background-color:white;
+  }
+  #basket .allPrice{
+    margin-bottom:50px;
+    font-size:27px;
+  }
+  #basket .allPrice>p{
+    font-size:13px;
+    text-align: right;
+  }
+  #basket .allPrice>div{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #basket .allPrice>div>p:nth-child(2){
+    width:fit-content;
+    border-bottom: 2px solid #595959;
+    margin:0 10px;
+    text-align: right;
+  }
+    /* 마지막 버튼 */
+  #basket>section>div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #basket>section>div:last-child>p{
+    width:48%;
+  }
+  #basket>section>div:last-child>p>button{
+    width:100%;
+    padding:20px 0;
+    font-size:24px;
+    border: 3px solid #6F9475;
+    color:#6F9475;
+    background-color:white;
+  }
+  #basket .close{
+    position: absolute;
+    right:20px; top:20px;
+    width:40px; height:40px;
+    /* background-color: pink; */
+  }
+  #basket .close>span{
+    position:absolute;
+    left:0; top:50%;
+    width:100%;height:1px;
+    background-color: #595959;
+  }
+  #basket .close>span:first-child{
+    transform:rotate(-135deg) translateX(0%);
+  }
+  #basket .close>span:last-child{
+    transform:rotate(-45deg) translate(0%);
+  }
 
   #back{
     width:100%; height:100%;
