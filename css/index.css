@@ -121,6 +121,7 @@ nav>div>ul>li>div>ul{
 }
 nav>div>ul>li>div>ul>li{
   float:left;
+  width:16.66666666666667%;
 }
 nav>div>ul>li>div>ul>li>a{
   color:#595959
@@ -135,10 +136,10 @@ nav>div>ul>li>div>ul>li>a>img{
 
 nav .close{
   position: absolute;
-  right:0; top:110px;  /* 90px+20px */
+  right:0; top:0px;  /* 90px+20px */
   width:35px; height:35px;
   /* background-color: pink; */
-  display: none; /* 숨기기 */  /* 지금 */
+  display: none; /* 숨기기 */
 }
 nav .close>span{
   position:absolute;
@@ -194,7 +195,7 @@ main{
   text-indent:-99999px
 }
 #box01>ul>li.pic02{background: url('../img/intro02.png') no-repeat center top;}
-#box01>ul>li.pic03{background: url('../img/intro04.png') no-repeat center top;}
+#box01>ul>li.pic03{background: url('../img/intro03.png') no-repeat center top;}
 /* #box01>.picNav{
   width:105px;
   position:absolute;

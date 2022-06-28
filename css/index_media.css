@@ -71,12 +71,13 @@ nav{
   right:-350px;  /* 숨기기 */
   /* right:0; */
   top:0;
-  padding:0 40px;
+  padding:40px;
   box-sizing: border-box;
-
 }
 nav>div{
+  width:100%;
   display: block;
+  position: relative;
 }
 li.hiddenWeb{
   display: block;
@@ -91,9 +92,11 @@ nav>div>ul{
   justify-content:center;
 }
 nav>div>ul>li{
+  width:100%;
   padding: 0 ;
   border-top:1px solid #dfdfdf;
-  position: relative;
+  position: relative;  
+  text-align: left;
 }
 nav>div>ul>li>a{
   color: #595959;
@@ -101,8 +104,11 @@ nav>div>ul>li>a{
 }
 nav .close{
   position: absolute;
-  right:0; top:0;  /* 90px+20px */
+  right:-20px; top:-20px;
   width:25px; height:25px;
+  display: none; /* 숨기기 */
+}
+nav .hiddenWeb>ul{
   display: none; /* 숨기기 */
 }
 /* 회원정보 */
@@ -136,9 +142,6 @@ nav>div>ul>li>div>ul>li>a>p{
 }
 nav>div>ul>li>div>ul>li>a>img{
   display: none;
-}
-nav .close{
-  top:20px; right:0;
 }
 
 /* main */
@@ -181,9 +184,11 @@ main{
 /* box02 */
 #box02>section>div{
   width:100%;
+  justify-content: flex-start;
 }
 #box02>section>div>figure{
-  width:30%;
+  width:26vw;
+  margin:0 2vw 30px;
 }
 dd>.goCart{
   width:100%;
@@ -436,19 +441,23 @@ p.btn>span:nth-child(3){
 
 /* nav */
 nav{
-  width:100%; height:100%;
+  width:100%; 
   position:fixed;
   right:-100%;  /* 숨기기 */
-  /* right:0; */
+  /* right:0;  */
   top:0;
-  padding:0 40px;
+  padding:40px;
   box-sizing: border-box;
 }
 nav>div{
+  width:100%;
   display: block;
 }
 li.hiddenWeb{
   display: block;
+}
+li.hiddenTablet{
+  display: none;
 }
 nav>div>ul{
   width:100%;
@@ -457,9 +466,12 @@ nav>div>ul{
   justify-content:center;
 }
 nav>div>ul>li{
+  width:100%;
   padding: 0 ;
   border-top:1px solid #dfdfdf;
   position: relative;
+  text-align: left;
+  line-height: 40px;
 }
 nav>div>ul>li>a{
   color: #595959;
@@ -468,13 +480,19 @@ nav>div>ul>li>a{
 /* 회원정보,브랜드소개 */
 nav>div>ul>li>ul{
   text-indent: 15px;
+  display: none; /* 숨기기 */
+}
+nav>div>ul>li>ul>li{
+  line-height: 40px;
 }
 nav>div>ul>li>ul>li>a{
-  line-height: 40px;
   color:#595959;
   font-size:15px;
 }
-nav>div>ul>li>ul>li{
+nav .close{
+  position: absolute;
+  right:-20px; top:-20px;  /* 90px+20px */
+  width:25px; height:25px;
   display: none; /* 숨기기 */
 }
 
