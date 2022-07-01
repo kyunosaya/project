@@ -20,10 +20,10 @@
                         <a href="./index.html"><img src="./img/logo/chicorlogo_w.png" alt="chicorLogo"></a>
                     </h1>
                     <ul>
-                        <li><a>로그인</a></li>
-                        <li><a>회원가입</a></li>
-                        <li><a>관심상품</a></li> 
-                        <li><a>장바구니</a></li>
+                        <li><p>로그인</p></li>
+                        <li><p>회원가입</p></li>
+                        <li><p>관심상품</p></li> 
+                        <li><p>장바구니</p></li>
                     </ul>
                 </div>
                     <p class="btn">
@@ -183,7 +183,7 @@
                                 <figcaption>
                                     <dl>
                                         <dt>카밀</dt>
-                                        <dd>카밀 핸드&네일 크림 클래식</dd>
+                                        <dd>카밀 핸드&amp;네일 크림 클래식</dd>
                                         <dd>7,200원</dd>
                                         <dd>
                                             <p class="goCart">
@@ -243,7 +243,7 @@
                                 <figcaption>
                                     <dl>
                                         <dt>카밀</dt>
-                                        <dd>카밀 핸드&네일 크림 플레쉬</dd>
+                                        <dd>카밀 핸드&amp;네일 크림 플레쉬</dd>
                                         <dd>7,200원</dd>
                                         <dd>
                                             <p class="goCart">
@@ -437,7 +437,7 @@
                                     <figcaption>
                                         <dl>
                                             <dt>카밀</dt>
-                                            <dd>카밀 핸드&네일 크림 센시티브</dd>
+                                            <dd>카밀 핸드&amp;네일 크림 센시티브</dd>
                                             <dd>7,200원</dd>
                                         </dl>
                                     </figcaption>
@@ -487,7 +487,7 @@
                                     <figcaption>
                                         <dl>
                                             <dt>카밀</dt>
-                                            <dd>카밀 핸드&네일 크림 인텐시브</dd>
+                                            <dd>카밀 핸드&amp;네일 크림 인텐시브</dd>
                                             <dd>7,200원</dd>
                                         </dl>
                                     </figcaption>
@@ -635,24 +635,29 @@
                 <section>
                     <h4>관심 상품</h4>
                     <div class="interestTop">
-                        <p><input type="checkbox"></p>
-                        <p>이미지</p>
-                        <p>상품정보</p>
-                        <p>합계</p>
-                        <p>선택</p>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                            </li>
+                            <li id="hiddenMobile">이미지</li>
+                            <li id="hiddenMobile">상품정보</li>
+                            <li id="hiddenMobile">가격</li>
+                            <li id="hiddenMobile">선택</li>
+                        </ul>
                     </div>
 
-                    <ul>
-                        <li>
+                    <div>
+                        <figure>
                             <p>
                                 <input type="checkbox">
                             </p>
-                            <p>
-                                <img src="./img/frudia/frudia_greenury.png" alt="관심상품01">
-                            </p>
-                            
-                            <p>리프루스트 에센셜 블렌딩 핸드크림 그리너리</p>
-                            <p>15,000원</p> 
+                            <img src="./img/frudia/frudia_greenury.png" alt="관심상품01">
+                            <figcaption>
+                                <dl>
+                                    <dt>리프루스트 에센셜 블렌딩 핸드크림 그리너리</dt>
+                                    <dd>15,000원</dd>
+                                </dl>
+                            </figcaption>
                             <div class="button">
                                 <p>
                                     <button>장바구니 담기</button>
@@ -661,10 +666,10 @@
                                     <button>삭제하기</button>
                                 </p>
                             </div>
-                        </li>
-                    </ul>
+                        </figure> 
+                    </div>
 
-                    <div>   
+                    <div class="lastButton">   
                         <p>
                             <button>선택 장바구니 담기</button>
                         </p>
@@ -683,27 +688,29 @@
                 <section>
                     <h4>장바구니</h4>
                     <div class="basketTop">
-                        <p><input type="checkbox"></p>
-                        <p>이미지</p>
-                        <p>상품정보</p>
-                        <p>수량</p>
-                        <p>합계</p>
-                        <p>선택</p>
+                        <ul>
+                            <li><input type="checkbox"></li>
+                            <li id="hiddenMobile">이미지</li>
+                            <li id="hiddenMobile">상품정보</li>
+                            <li id="hiddenMobile">수량</li>
+                            <li id="hiddenMobile">합계</li>
+                            <li id="hiddenMobile">선택</li>
+                        </ul>
                     </div>
 
-                    <ul>
-                        <li>
+                    <div>
+                        <figure>
                             <p>
                                 <input type="checkbox">
                             </p>
-                            <p>
-                                <img src="./img/frudia/frudia_greenury.png" alt="관심상품01">
-                            </p>
-                            <p>리프루스트 에센셜 블렌딩 핸드크림 그리너리</p>
-                            <p>
-                                <input type="text">
-                            </p>
-                            <p>15,000원</p>
+                            <img src="./img/frudia/frudia_greenury.png" alt="관심상품01">
+                            <figcaption>
+                                <dl>
+                                    <dt>리프루스트 에센셜 블렌딩 핸드크림 그리너리</dt>
+                                    <dd><input type="range"></dd>
+                                    <dd>15,000원</dd>
+                                </dl>
+                            </figcaption>
                             <div class="button">
                                 <p>
                                     <button>관심상품등록</button>
@@ -712,9 +719,8 @@
                                     <button>삭제하기</button>
                                 </p>
                             </div>
-
-                        </li>
-                    </ul>
+                        </figure> 
+                    </div>
 
                     <div class="allPrice">
                         <div>
@@ -725,7 +731,7 @@
                         <p>배송비 2,500원이 포함된 가격입니다.</p>
                     </div>
 
-                    <div>   
+                    <div class="lastButton">   
                         <p>
                             <button>선택삭제</button>
                         </p>

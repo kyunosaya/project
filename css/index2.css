@@ -65,7 +65,9 @@ header>div>ul>li{
   display:inline;
 }
 header>div>ul>li:nth-child(4){border-right-style: none;}
-header>div>ul>li>a{
+header>div>ul>li>p{
+  line-height:20px;
+  height:fit-content;
   color: white;
   border-right: solid 1px #ffffff;
   padding:0 15px 0;
