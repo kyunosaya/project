@@ -362,10 +362,10 @@ footer>div>section.footer01>div{
       padding:20px;
       display: none; /* 숨기기 */
     }
-    #interest>section>ul>li>p>img{
+    #interest>section img{
       width:85%;
     }
-    #interest ul>li>.button button{
+    #interest .button button{
       width:100%;
     }
 
@@ -398,6 +398,9 @@ footer>div>section.footer01>div{
   }
   p.title{
     /* font-size:36px; */
+  }
+  .hiddenMobile{
+    display: none;
   }
   /* header */
 header{
@@ -864,4 +867,6 @@ aside>p>a{
     right:10px; top:10px;
     width:30px; height:30px;
   }
+
+  
 }

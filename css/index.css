@@ -70,7 +70,9 @@ header>div>ul>li{
   display:inline;
 }
 header>div>ul>li:nth-child(4){border-right-style: none;}
-header>div>ul>li>a{
+header>div>ul>li>p{
+  line-height:20px;
+  height:fit-content;
   color: white;
   border-right: solid 1px #ffffff;
   padding:0 15px 0;
@@ -894,6 +896,7 @@ aside>p>a{
   #interest input{
     width:100%;
     box-sizing: border-box;
+    margin: 0 auto;
   }
   #interest>section>h4{
     color:#6F9475;
@@ -902,71 +905,94 @@ aside>p>a{
   #interest>section>.interestTop{
     background-color: #F8F3EB;
     padding: 5px 0;
+    margin-bottom: 30px;
+  }
+  #interest>section>.interestTop>ul{
     display: flex;
     flex-wrap:wrap;
     text-align: center;
-    margin-bottom: 30px;
+    justify-content: space-around;
   }
-  #interest>section>.interestTop>p{
+  #interest>section>.interestTop>ul>li{
     width:20%;
   }
-  #interest>section>.interestTop>p:first-child{
+  #interest>section>.interestTop>ul>li:first-child{
     width:5%;
   }
-  #interest>section>.interestTop>p:nth-child(3){
+  #interest>section>.interestTop>ul>li:nth-child(2){
+    width:18%; margin-right:2%;
+  }
+  #interest>section>.interestTop>ul>li:nth-child(3){
     width:35%;
   }
-    /* ul */
-  #interest>section>ul{
+    /* figure */
+  #interest>section figure{
     margin-bottom: 50px;
-  }
-  #interest>section>ul>li{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     text-align: center;
+    padding: 20px 0;
     border-bottom: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    width:100%;
+    font-size:16px;
   }
-  #interest>section>ul>li>p{
-    width:20%;
-    font-size: 15px;
+  #interest>section figure>p{
+    width:5%
   }
-  #interest>section>ul>li>p:first-child{
-    width:5%;
+  #interest>section figure>img{
+    width:18%;
+    margin: 0 auto;
+    margin-right: 2%;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
   }
-  #interest>section>ul>li>p:nth-child(3){
-    width:35%;
-    /* vertical-align: middle; */
+  #interest>section figure>figcaption{
+    width:55%;
   }
-  #interest>section>ul>li>p>img{
-    width:100px;
-    border:1px solid #DFDFDF;
-  }
-  #interest ul>li>.button{
-    width:20%;
-  }
-  #interest ul>li>.button button{
-    padding:3px 0;
-    width:100px;
-    color:#595959;
-    border:1px solid #595959;
-    background-color:white;
-  }
-    /* 마지막 버튼 */
-  #interest>section>div:last-child{
+  #interest>section figure>figcaption>dl{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    width:100%;
+  }
+  #interest>section figure>figcaption>dl>dt{
+    width:63%;
+  }
+  #interest>section figure>figcaption>dl>dd{
+    width:37%;
+  }
+  #interest>section figure>.button{
+    width:20%;
+  }
+  #interest>section figure>.button>p:first-child{
+    margin-bottom:5px;
+  }
+  #interest>section figure>.button>p>button{
+    width:100px;
+    border:1px solid #595959;
+    color:#595959;
+    background-color: #ffffff;
+    line-height: 30px;
+  }
+  /* lastButton */
+  #interest>section>.lastButton{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
   }
-  #interest>section>div:last-child>p{
-    width:48%;
+  #interest>section>.lastButton>p{
+    width:47%;
   }
-  #interest>section>div:last-child>p>button{
+  #interest>section>.lastButton>p>button{
     width:100%;
-    padding:20px 0;
+    line-height: 50px;
     font-size:24px;
-    border: 3px solid #6F9475;
     color:#6F9475;
-    background-color:white;
+    border:3px solid #6F9475;
+    background-color: #ffffff;
   }
   #interest .close{
     position: absolute;
@@ -1004,6 +1030,11 @@ aside>p>a{
     width:100%;
     margin: 0 auto;
   }
+  #basket input{
+    width:100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
   #basket>section>h4{
     color:#6F9475;
     margin-bottom: 50px;
@@ -1011,92 +1042,92 @@ aside>p>a{
   #basket>section>.basketTop{
     background-color: #F8F3EB;
     padding: 5px 0;
+    margin-bottom: 30px;
+  }
+  #basket>section>.basketTop>ul{
     display: flex;
     flex-wrap:wrap;
     text-align: center;
-    margin-bottom: 20px;
-  }
-  #basket>section>.basketTop>p{
-    width:17%;
-  }
-  #basket>section>.basketTop>p:first-child{
-    width:5%;
-  }
-  #basket>section>.basketTop>p:nth-child(3){
-    width:25%;
-  }
-    /* ul */
-  #basket>section>ul{
-    margin-bottom: 50px;
-  }
-  #basket>section>ul>li{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center;
-    border-bottom: 1px solid #DFDFDF;
   }
-  #basket>section>ul>li>p{
+  #basket>section>.basketTop>ul>li{
     width:17%;
-    font-size: 15px;
   }
-  #basket>section>ul>li>p:first-child{
+  #basket>section>.basketTop>ul>li:first-child{
     width:5%;
   }
-  #basket>section>ul>li>p:nth-child(3){
+  #basket>section>.basketTop>ul>li:nth-child(2){
+    width: 17%;
+  }
+  #basket>section>.basketTop>ul>li:nth-child(3){
     width:27%;
   }
-  #basket>section>ul>li>p:nth-child(4)>input{
-    width:80%; /* 구입수량 */
-  }
-  #basket>section>ul>li>p>img{
-    width:100px;
-    border:1px solid #DFDFDF;
-  }
-  #basket ul>li>.button{
-    width:17%;
-  }
-  #basket ul>li>.button button{
-    padding:3px 0;
-    width:100px;
-    color:#595959;
-    border:1px solid #595959;
-    background-color:white;
-  }
-  #basket .allPrice{
-    margin-bottom:50px;
-    font-size:27px;
-  }
-  #basket .allPrice>p{
-    font-size:13px;
-    text-align: right;
-  }
-  #basket .allPrice>div{
-    display: flex;
-    justify-content: flex-end;
-  }
-  #basket .allPrice>div>p:nth-child(2){
-    width:fit-content;
-    border-bottom: 2px solid #595959;
-    margin:0 10px;
-    text-align: right;
-  }
-    /* 마지막 버튼 */
-  #basket>section>div:last-child{
+    /* figure */
+  #basket>section figure{
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    width:100%;
+    font-size:16px;
+  }
+  #basket>section figure>p{
+    width:5%
+  }
+  #basket>section figure>img{
+    width:17%;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+  }
+  #basket>section figure>figcaption{
+    width:61%;
+  }
+  #basket>section figure>figcaption>dl{
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    width:100%;
+  }
+  #basket>section figure>figcaption>dl>dt{
+    width:40%; margin: 0 2%;
+  }
+  #basket>section figure>figcaption>dl>dd{
+    width:28%;
+  }
+  #basket>section figure>.button{
+    width:17%;
+  }
+  #basket>section figure>.button>p:first-child{
+    margin-bottom:5px;
+  }
+  #basket>section figure>.button>p>button{
+    width:100px;
+    border:1px solid #595959;
+    color:#595959;
+    background-color: #ffffff;
+    line-height: 30px;
+  }
+    /* lastButton */
+  #basket>section>.lastButton{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
   }
-  #basket>section>div:last-child>p{
-    width:48%;
+  #basket>section>.lastButton>p{
+    width:47%;
   }
-  #basket>section>div:last-child>p>button{
+  #basket>section>.lastButton>p>button{
     width:100%;
-    padding:20px 0;
+    line-height: 50px;
     font-size:24px;
-    border: 3px solid #6F9475;
     color:#6F9475;
-    background-color:white;
+    border:3px solid #6F9475;
+    background-color: #ffffff;
   }
   #basket .close{
     position: absolute;
@@ -1116,7 +1147,30 @@ aside>p>a{
   #basket .close>span:last-child{
     transform:rotate(-45deg) translate(0%);
   }
+    /* allPrice */
+  #basket .allPrice{
+    margin-bottom:50px;
+    font-size:27px;
+  }
+  #basket .allPrice>p{
+    font-size:13px;
+    text-align: right;
+  }
+  #basket .allPrice>div{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #basket .allPrice>div>p:nth-child(2){
+    width:fit-content;
+    border-bottom: 2px solid #595959;
+    margin:0 10px;
+    text-align: right;
+  }
 
+
+
+
+  /* back */
   #back{
     width:100%; height:100%;
     background-color: rgba(0,0,0,0.6);
