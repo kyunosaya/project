@@ -362,9 +362,12 @@ footer>div>section.footer01>div{
       padding:20px;
       display: none; /* 숨기기 */
     }
+<<<<<<< HEAD
     #interest>section figure>img{
       width:15%;
     }
+=======
+>>>>>>> 44882aa72088a53cbb306762400d1e9681d8663c
     #interest>section img{
       width:85%;
     }
