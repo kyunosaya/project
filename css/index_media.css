@@ -362,10 +362,13 @@ footer>div>section.footer01>div{
       padding:20px;
       display: none; /* 숨기기 */
     }
-    #interest>section>ul>li>p>img{
+    #interest>section figure>img{
+      width:15%;
+    }
+    #interest>section img{
       width:85%;
     }
-    #interest ul>li>.button button{
+    #interest .button button{
       width:100%;
     }
 
@@ -376,10 +379,16 @@ footer>div>section.footer01>div{
       padding:20px;
       display: none; /* 숨기기 */
     }
+    #basket>section figure>img{
+      width:15%
+    }
     #basket>section>ul>li>p>img{
       width:85%;
     }
     #basket ul>li>.button button{
+      width:100%;
+    }
+    #basket>section figure>.button>p>button{
       width:100%;
     }
 
@@ -398,6 +407,9 @@ footer>div>section.footer01>div{
   }
   p.title{
     /* font-size:36px; */
+  }
+  .hiddenMobile{
+    display: none;
   }
   /* header */
 header{
@@ -864,4 +876,56 @@ aside>p>a{
     right:10px; top:10px;
     width:30px; height:30px;
   }
+
+  #hiddenMobile{
+    display: none;
+  }
+
+    /* interest */
+  #interest{
+    width:100%;
+    padding:50px 0;
+    top:0; left:0;
+    margin-left:0;
+  }
+  #interest>section>h4{
+    font-size:24px;
+  }
+  #interest>section>.interestTop{
+    position: relative;
+  }
+  #interest>section>.interestTop>ul{
+    justify-content: flex-start;
+  }
+  #interest>section>.interestTop>ul>li:first-child{
+    width:100px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #interest>section>.interestTop>ul>li:first-child::after{
+    content: '전체선택';
+    font-size:15px;
+  }
+  #interest>section figure{
+    padding: 20px 13px;
+  }
+  #interest>section figure>img{
+    width:30%;
+    margin: 0 13px;
+  }
+  #interest>section figure>figcaption{
+    width:auto;
+    background-color: yellowgreen;
+  }
+  #interest>section figure>figcaption>dl>dt{
+    width:100%;
+  }
+
+  /* 마지막 : figcaption width값 맞추는 방법 생각해보기. */
+
+
+  /* basket */
+
+  
 }
