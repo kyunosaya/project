@@ -27,6 +27,9 @@ close버튼이 타블렛에서 안 뜬 이유.
   header>div,nav>div,article>div,article>section,footer>div{
     width:90vw
   }
+  .hiddenTablet{
+    display:none
+  }
   /* header */
   header{
     position:relative;
@@ -81,9 +84,6 @@ nav>div{
 }
 li.hiddenWeb{
   display: block;
-}
-.hiddenTablet{
-  display:none
 }
 nav>div>ul{
   width:100%;
@@ -192,9 +192,6 @@ main{
 }
 dd>.goCart{
   width:100%;
-}
-.hiddenTablet{
-  display:none;
 }
 
 /* box03 */
@@ -467,9 +464,6 @@ nav>div{
 }
 li.hiddenWeb{
   display: block;
-}
-li.hiddenTablet{
-  display: none;
 }
 nav>div>ul{
   width:100%;
@@ -796,8 +790,8 @@ aside>p{
   bottom:8px; right:8px;
 }
 aside>p>a{
-  width:10vw; height:10vw;
-  font-size:5vw
+  width:35px; height:35px;
+  font-size:18px
 }
 
 

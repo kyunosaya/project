@@ -815,7 +815,7 @@ aside>p>a{
     width:100%;
     height : calc(100vh - 194px);
     position: relative;
-    background: url('../img/loccitane_img.png') no-repeat center;
+    background: url('../img/loccitane.png') no-repeat center;
     background-size: cover;
   }
   #box01>section{
@@ -845,13 +845,13 @@ aside>p>a{
   #box02>section>h3>div{
     width:100%; height:100%;
     background: url('../img/logo/loccitane_logo01.png') no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   #box02>section>dl{
     text-align: center;
   }
   #box02>section>dl>dt{
-    color:#528037;
+    color:#407A1D;
     font-size:27px;
     font-weight: bold;
     margin-bottom: 40px;
@@ -897,7 +897,7 @@ aside>p>a{
   #box04>section>h3{
     width:fit-content;
     margin:0 auto;
-    color:#336018;
+    color:#407A1D;
     font-size:27px;
     font-weight: normal;
     border-bottom: 1px solid #4B2020;
@@ -940,7 +940,6 @@ aside>p>a{
   }
   #box05>section>.loccitaneSNS{
     margin: 0 auto;
-    /* background-color: yellowgreen; */
   }
   #box05>section>.loccitaneSNS>p{
     text-align: center;
@@ -949,7 +948,6 @@ aside>p>a{
   #box05>section>.loccitaneSNS>ul{
     width:fit-content;
     margin: 0 auto;
-    /* background-color: red; */
     display: flex;
     flex-wrap:wrap;
   }
