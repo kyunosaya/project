@@ -171,12 +171,12 @@ main{
   background-size: auto 100%;
 }
 #box01>p.prev{
-  width:6%; height: auto;
+  width:30px; height: 50px;
   position:absolute;
   top:45%; left:10px;
 }
 #box01>p.next{
-  width:6%; height: auto;
+  width:30px; height: 50px;
   position:absolute;
   top:45%; right:10px;
 }
@@ -195,9 +195,6 @@ dd>.goCart{
 }
 
 /* box03 */
-#box03{
-  background: url('../img/intro_join2.png') no-repeat right center;
-}
 #box03>section>div{
   padding-left: 0;
 }
@@ -452,7 +449,7 @@ p.btn>span:nth-child(3){
 nav{
   width:100%; 
   position:fixed;
-  right:-100%;  /* 숨기기 */
+  right:-100vw;  /* 숨기기 */
   /* right:0;  */
   top:0;
   padding:40px;
@@ -574,15 +571,15 @@ dd>.goCart{
 /* box03 */
 #box03{
   width:100%;
-  background: url('../img/intro_join2.png') no-repeat right center;
   background-size: contain 100%;
 }
 #box03>section>div{
   padding-left: 0px;
 }
 #box03>section>div>dl{
+  width:90vw;
   line-height: 35px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 #box03>section>div>dl>dt{
@@ -628,8 +625,7 @@ dd>.goCart{
   padding-left:0;
 }
 #box04>div>div.no01{
-  background:url('../img/intro06.png') no-repeat left top;
-  background-size: contain;
+  background-position:center top;
   margin-bottom: 40px;
 }
 /* no02 */
@@ -638,8 +634,7 @@ dd>.goCart{
   padding-right:0;
 }
 #box04>div>div.no02{
-  background:url('../img/intro07.png') no-repeat right top;
-  background-size: contain;
+  background-position:center top;
 }
 
 /* box05 */

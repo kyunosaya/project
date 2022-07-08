@@ -13,9 +13,6 @@ close버튼이 타블렛에서 안 뜬 이유.
     nav>div>ul>li>div>ul{
         width:1200px;
     }
-    #box03>section>div{
-        width:1200px;
-    }
 
   /*  */
 }
@@ -264,6 +261,31 @@ footer>div>section.footer01>div{
     #basket ul>li>.button button{
       width:100%;
     }
+
+    /* main */
+    #products{
+      padding-top:104px;
+    }
+
+    #products>h2{
+      padding: 100px 0;
+    }
+    #products>section:before{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: flex-end;
+      content: '검색아이콘';
+    }
+    #products>section>div.top{
+      width:100%;
+    }
+    /* 검색*/
+    aside.search{
+      display: none; /* 숨기기 */
+      position: absolute;
+    }
+
+    
 
 } /* 타블렛 */
 

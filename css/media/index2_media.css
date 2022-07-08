@@ -146,10 +146,6 @@ main{
 #box00>section{
   width:100%;
   height: calc(100vh - 104px);
-  position: relative;
-  background: url('../img/chicorpic.png') no-repeat left center;
-  background-size: cover;
-  margin-bottom:17px;
 }
 #box00>section>div.logoBackground{
   width:70vw;
@@ -166,19 +162,20 @@ main{
 
 /* box01 */
 #box01{
-  background: url('../img/01_onestep.jpg') no-repeat center;
-  background-size: cover;
-  padding:60px 0;
+  padding:50px 0 0 0;
+}
+#box01>section{
+  width:100%;
 }
 #box01>section>div{
-  width:75vw;
-  padding:50px;
-  background-image: none;
-  background-color: rgba(255,255,255,0.7);
-  margin:0 auto;
+  padding:80px 0;
+  background-size: cover;
 }
 #box01>section>div>div{
-  padding:0;
+  width:80vw;
+  margin:0 auto;
+  padding:30px;
+  background-color: rgba(255,255,255,0.7);
 }
 #box01>section>div>div>p{
   padding-left:0px;
@@ -186,19 +183,21 @@ main{
 
 /* box02 */
 #box02{
-  background: url('../img/02_easy.jpg') no-repeat center;
-  background-size: cover;
-  padding:60px 0;
+  padding:50px 0 0 0;
+  background-color: transparent;
+}
+#box02>section{
+  width:100%;
 }
 #box02>section>div{
-  width:75vw;
-  padding:50px;
-  background-image: none;
-  background-color: rgba(255,255,255,0.7);
-  margin:0 auto;
+  padding:80px 0;
+  background-size: cover;
 }
 #box02>section>div>div{
-  padding:0;
+  width:80vw;
+  margin:0 auto;
+  padding:30px;
+  background-color: rgba(255,255,255,0.7);
   text-align: left;
 }
 #box02>section>div>div>p{
@@ -207,19 +206,20 @@ main{
 
 /* box03 */
 #box03{
-  background: url('../img/03_playful.jpg') no-repeat center;
-  background-size: cover;
-  padding:60px 0;
+  padding:50px 0 0 0;
+}
+#box03>section{
+  width:100%;
 }
 #box03>section>div{
-  width:75vw;
-  padding:50px;
-  background-image: none;
-  background-color: rgba(255,255,255,0.7);
-  margin:0 auto;
+  padding:80px 0;
+  background-size: cover;
 }
 #box03>section>div>div{
-  padding:0;
+  width:80vw;
+  margin:0 auto;
+  padding:30px;
+  background-color: rgba(255,255,255,0.7);
 }
 #box03>section>div>div>p{
   padding-left:0px;
@@ -227,25 +227,26 @@ main{
 
 /* box04 */
 #box04{
-  background: url('../img/04_trendy.jpg') no-repeat center;
-  background-size: cover;
-  padding:60px 0;
+  padding:50px 0 0 0;
+  background-color: transparent;
+}
+#box04>section{
+  width:100%;
 }
 #box04>section>div{
-  width:75vw;
-  padding:50px;
-  background-image: none;
-  background-color: rgba(255,255,255,0.7);
-  margin:0 auto;
+  padding:80px 0;
+  background-size: cover;
 }
 #box04>section>div>div{
-  padding:0;
+  width:80vw;
+  margin:0 auto;
+  padding:30px;
+  background-color: rgba(255,255,255,0.7);
   text-align: left;
 }
 #box04>section>div>div>p{
   padding-left:0px;
 }
-
 /* view */
 #view>section{
   padding: 0 0 100px 0;
@@ -478,10 +479,9 @@ h2:before{
 
   /* box01 */
   #box01>section>div{
-    box-sizing:content-box;
     padding-left: 0%;
-    background:url('../img/01_onestep.jpg') no-repeat left top;
-    background-size: contain ;
+    background-position: left -100px;
+    background-size: 100% ;
     padding-top:200px;
     position: relative;
   }
@@ -493,7 +493,9 @@ h2:before{
     content: '';
   }
   #box01>section>div>div{
+    width:100%;
     background-color: #ffffff;
+    box-sizing: border-box;
   }
   #box01>section>div>div>h2{
     position: absolute;
@@ -510,10 +512,9 @@ h2:before{
     background-color:transparent;
   }
   #box02>section>div{
-    box-sizing:content-box;
     padding-right: 0%;
-    background:url('../img/02_easy.jpg') no-repeat left top;
-    background-size: contain ;
+    background-position:left -250px;
+    background-size: 100% ;
     padding-top:200px;
     position: relative;
   }
@@ -525,7 +526,9 @@ h2:before{
     content: '';
   }
   #box02>section>div>div{
+    width:100%;
     background-color: #ffffff;
+    box-sizing: border-box;
     text-align: left;
   }
   #box02>section>div>div>h2{
@@ -540,9 +543,8 @@ h2:before{
 
   /* box03 */
   #box03>section>div{
-    box-sizing:content-box;
     padding-left: 0%;
-    background:url('../img/03_playful.jpg') no-repeat left top;
+    background-position: center -100px;
     background-size: contain ;
     padding-top:200px;
     position: relative;
@@ -555,12 +557,14 @@ h2:before{
     content: '';
   }
   #box03>section>div>div{
+    width:100%;
     background-color: #ffffff;
+    box-sizing: border-box;
   }
   #box03>section>div>div>h2{
     position: absolute;
     top:100px; left:50%;
-    margin:-15px 0 0 -146px;
+    margin:-15px 0 0 -150px;
     color:#ffffff
   }
   #box03>section>div>div>p{
@@ -572,10 +576,9 @@ h2:before{
     background-color:transparent;
   }
   #box04>section>div{
-    box-sizing:content-box;
     padding-right: 0%;
-    background:url('../img/04_trendy.jpg') no-repeat left top;
-    background-size: contain ;
+    background-position:left -150px;
+    background-size: 100% ;
     padding-top:200px;
     position: relative;
   }
@@ -587,7 +590,9 @@ h2:before{
     content: '';
   }
   #box04>section>div>div{
+    width:100%;
     background-color: #ffffff;
+    box-sizing: border-box;
     text-align: left;
   }
   #box04>section>div>div>h2{
@@ -685,8 +690,8 @@ aside>p{
   bottom:8px; right:8px;
 }
 aside>p>a{
-  width:10vw; height:10vw;
-  font-size:5vw
+  width:35px; height:35px;
+  font-size:18px
 }
 
 /* modal */
