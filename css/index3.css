@@ -755,7 +755,6 @@ aside>p>a{
   text-align:center;
   line-height:40px;
   padding: 150px 0;
-  /* margin:0 auto; */
 }
 #products>section{
   overflow: hidden;
@@ -829,6 +828,25 @@ aside.search>div.brand>label>input{
   width:20px; height:20px;
   margin-right:8px ;
   /* color:#595959; */
+}
+aside.search .close{
+  position: absolute;
+  right:10px; top:10px;
+  width:30px; height:30px;
+  /* background-color: pink; */
+  display: none; /* 숨기기 */
+}
+aside.search .close>span{
+  position:absolute;
+  left:0; top:50%;
+  width:100%;height:1px;
+  background-color: #595959;
+}
+aside.search .close>span:first-child{
+  transform:rotate(-135deg) translateX(0%);
+}
+aside.search .close>span:last-child{
+  transform:rotate(-45deg) translate(0%);
 }
   /* price */
 .price{
@@ -907,8 +925,8 @@ div.all{
   display: flex;
   flex-wrap:wrap;
   justify-content: space-between;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
   border-bottom:solid 1px #dfdfdf;
 }
 div.all>div{
@@ -921,7 +939,7 @@ div.all>div{
 div.all>div>figure{
   width:100%; 
   box-sizing: border-box;
-  padding: 15px 0;
+  padding: 0 0 15px 0;
   /* background-color: tomato; */
 }
 div.all>div>figure>img{
@@ -950,7 +968,7 @@ div.all>div>figure>img{
   width:100%;
 }
 .all>div>figure>figcaption>dl>dd:nth-child(2){
-  margin-bottom:30px;
+  margin-bottom:25px;
 }
 .all>div>figure>figcaption>dl>dd:nth-child(3){
   /* margin-bottom:15px; */
@@ -958,9 +976,9 @@ div.all>div>figure>img{
   position: absolute;
   bottom:0; left:0;
 }
-section.products>p{
+#products>section>p{
   /* clear: both; */
-  margin:0 auto;
+  margin:0 auto 50px;
   width:74.66666666666667%;
   float:right;
   text-align: center;

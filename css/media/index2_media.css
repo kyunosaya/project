@@ -428,7 +428,7 @@ nav>div>ul>li>ul>li{
 
 /* main */
 main{
-  padding-top:50px;
+  padding-top:76.95px;
 }
 
 /* box00 */
@@ -616,6 +616,7 @@ h2:before{
 }
 #view>section>h4{
   margin-bottom: 40px;
+  font-size: 27px;
 }
 #view>section>div{
   width:1200%;

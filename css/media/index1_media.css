@@ -170,6 +170,12 @@ main{
 #box01>ul>li{
   background-size: auto 100%;
 }
+#box01>ul>li.pic02{
+  background-size: auto 100%;
+}
+#box01>ul>li.pic03{
+  background-size: auto 100%;
+}
 #box01>p.prev{
   width:30px; height: 50px;
   position:absolute;
@@ -502,7 +508,7 @@ nav .close{
 
 /* main */
 main{
-  padding-top:50px;
+  padding-top:76.95px;
 }
 
 /* box01 */
@@ -525,6 +531,12 @@ main{
 #box01>ul>li{
   background-size: auto 100%;
 }
+#box01>ul>li.pic02{
+  background-size: auto 100%;
+}
+#box01>ul>li.pic03{
+  background-size: auto 100%;
+}
 #box01>.picNav{
   display: none;
 }
@@ -541,6 +553,7 @@ main{
 
 /* box02 */
 #box02>section>h3{
+  font-size:27px;
   width:fit-content;
   margin:0 auto 40px;
 }
@@ -583,7 +596,7 @@ dd>.goCart{
   background-color: rgba(255, 255, 255, 0.5);
 }
 #box03>section>div>dl>dt{
-  font-size: 54px;
+  font-size: 36px;
   line-height: 60px;
   margin-bottom: 15px;
 }
@@ -607,6 +620,7 @@ dd>.goCart{
 }
 #box04>div>div>section>h4{
   margin-bottom:20px;
+  font-size:27px;
 }
 #box04>div>div>section>p:nth-child(2){
   margin-bottom:20px
@@ -711,6 +725,7 @@ dd>.goCart{
 }
 #view>section>h4{
   margin-bottom: 40px;
+  font-size: 27px;
 }
 #view>section>div{
   width:1200%;

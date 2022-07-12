@@ -197,7 +197,7 @@ main{
   text-indent:-99999px
 }
 #box01>ul>li.pic02{
-  background: url('../img/intro02.png') no-repeat center top;
+  background: url('../img/intro02.jpg') no-repeat left center;
   background-size: 110% ;
 }
 #box01>ul>li.pic03{
