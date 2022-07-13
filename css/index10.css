@@ -854,7 +854,7 @@ aside>p>a{
     /* box02 */
   #box02{}
   #box02>section{
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
   }
   #box02>section>h3{
     font-size:36px;
@@ -863,25 +863,96 @@ aside>p>a{
     margin-bottom: 50px;
   }
   #box02>section>div#show{
-    background-color: violet;
+    /* background-color: violet; */
   }
   #box02>section>div>ul{
     /* width:400%; */
-    /* background-color: red; */
+    /* display: flex; */
   }
   /* practice 참고하기. */
 
-  /* 공통 */
+  /* box02공통 */
   #box02>section>div>ul>li{
     width:100%;
     box-sizing: border-box;
     border: 1px solid #595959;
-    padding:50px;
+    padding:30px;
+    /* background-color: red; */
   }
 
 
   /* 제품선택하기 1 / 4 */
-  #box02>section>div>ul>li.list01{}
+  /* list01 공통 */
+
+  #box02>section>div>ul>li.list01{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+  }
+  #box02>section>div>ul>li.list01>.bigPic{
+    width:45%;
+    box-sizing: border-box;
+  }
+  #box02>section>div>ul>li.list01>.bigPic>img{
+    width:100%;
+    border: 3px solid #dfdfdf;
+  }
+  #box02>section>div>ul>li.list01>#inShow{
+    width:50%;
+    margin-left: 5%;
+    box-sizing: border-box;
+    /* background-color: tomato; */
+    height: fit-content;
+    overflow: hidden; /* 숨기기 */
+  }
+  #box02>section>div>ul>li.list01 ul.allProducts{
+    width:200%;
+    display: flex;
+  }
+  #box02 li.list01 figcaption{
+    font-size:15px;
+    text-align: center;
+  }
+  #box02>section>div>ul>li.list01 figure{
+    width:30%;
+    margin-bottom:15px;
+  }
+  #box02>section>div>ul>li.list01 figure>img{
+    width:100%;
+    border: 1px solid #dfdfdf;
+  }
+  #box02>section>div>ul>li.list01 li{
+    width:100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #box02>section>div>ul>li.list01 figcaption{
+    line-height: normal;
+  }
+  #box02>section>div>ul>li.list01 .btn{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    /* float: right; */
+    background-color: yellowgreen;
+  }
+  #box02>section>div>ul>li.list01 .btn>p{
+    padding:0 20px;
+  }
+
+    /* 01 */
+  #box02>section>div>ul>li.list01 li.products01{}
+  #box02>section>div>ul>li.list01 li.products01>figure{}
+  #box02>section>div>ul>li.list01 li.products01>figure>img{}
+  #box02>section>div>ul>li.list01 li.products01>figure>figcaption{}
+  /* 02 */
+  #box02>section>div>ul>li.list01 li.products02{}
+  #box02>section>div>ul>li.list01 li.products02>figure{}
+  #box02>section>div>ul>li.list01 li.products02>figure>img{}
+  #box02>section>div>ul>li.list01 li.products02>figure>figcaption{}
+
   
   /* 포장선택하기 2 / 4 */
   #box02>section>div>ul>li.list02{}
