@@ -1,0 +1,333 @@
+@charset "utf-8";
+  /* box01 */
+  #box01{
+    background: url('../img/promotion03.png') no-repeat top center;
+    background-size: cover;
+    width:100%;
+    height: calc(100vh - 194px);
+    position:relative;
+  }
+  #box01>h2{
+    width:500px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size:45px;
+    line-height: 100px;
+    color:#6F9475;
+    border: 5px solid #6F9475;
+    position:absolute;
+    top:50%; left:50%;
+    margin:-55px 0 0 -250px;
+  }
+  /* #box01>section{}
+  #box01>section>dl{
+    width:850px;
+    box-sizing: border-box;
+    border:3px solid #6F9475;
+    padding:50px;
+    text-align: center;
+    position: absolute;
+    left:50%; bottom:50px;
+    margin-left:-425px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  #box01>section>dl>dt{
+    font-size:27px;
+    color:#6F9475;
+    font-weight:bolder;
+    margin-bottom:30px;
+  }
+  #box01>section>dl>dd{
+    margin-bottom:20px;
+  } */
+
+    /* box02 */
+  #box02{
+    position:relative;
+  }
+  #box02>section.modal{
+    position:absolute;
+    left:50%; top:80px;
+    margin-left: -400px;
+    width:800px;
+    box-sizing: border-box;
+    border:3px solid #6F9475;
+    padding:100px;
+    text-align: center;
+    background-color: #FFFDF9;
+    /* display:none; 숨기기 */
+  }
+  #box02>section.modal>dl{
+    margin:0 auto;
+  }
+  #box02>section.modal>dl>dt{
+    font-size:27px;
+    color:#6F9475;
+    font-weight:bolder;
+    margin-bottom:50px;
+  }
+  #box02>section.modal>dl>dd{
+    margin-bottom:30px;
+  }
+  #box02 .close{
+    position: absolute;
+    top:10px; right:10px;
+    width:35px; height:35px;
+    /* display: none; 숨기기 */
+  }
+  #box02 .close>span{
+    position:absolute;
+    left:0; top:50%;
+    width:100%;height:1px;
+    background-color: #595959;
+  }
+  #box02 .close>span:first-child{
+    transform:rotate(-135deg) translateX(0%);
+  }
+  #box02 .close>span:last-child{
+    transform:rotate(-45deg) translate(0%);
+  }
+
+  #box02>section.sec{}
+  #box02>section.sec div#show{
+    width:100%;
+    border: 1px solid #595959;
+    margin-bottom:30px;
+    /* overflow: hidden; 숨기기 */
+  }
+  div#show>ul{
+    width:400%;
+    box-sizing: border-box;
+    display: flex;
+  }
+  div#show>ul>li{
+    width:25%;
+    box-sizing: border-box;
+    padding:50px 70px;
+    /* border: 1px solid red; */
+  }
+  div#show>ul>li>dl{}
+  div#show>ul>li>dl>dt{ 
+    font-size:36px;
+    color:#6F9475;
+    font-weight: normal;
+    margin-bottom: 50px;
+    text-align:center;
+  }
+div#show>ul>li>dl>dd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* list01 = 제품선택하기 1 / 4 */
+  li.list01{}
+  li.list01 .bigPic{
+    width:40%;
+    box-sizing: border-box;
+  }
+  li.list01 .bigPic>img{
+    width:100%;
+    border: 3px solid #dfdfdf;
+  }
+
+  li.list01 #inShow{
+    width:50%;
+    margin-left: 5%;
+    box-sizing: border-box;
+    /* background-color: tomato; */
+    height: fit-content;
+    overflow: hidden; /* 숨기기 */
+  }
+  #inShow>ul.allProducts{
+    width:200%;
+    display: flex;
+  }
+  li.list01 #inShow li{
+    width:100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  li.list01 #inShow figure{
+    width:15%;
+    margin-bottom:15px;
+  }
+  li.list01 #inShow figure>img{
+    width:100%;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+  }
+  li.list01 #inShow figcaption{
+    font-size:15px;
+    text-align: center;
+    line-height:normal;
+  }
+  li.list01 .btn{
+    display: flex;
+    padding:0px;
+    justify-content: flex-end;
+  }
+  li.list01 .btn>p{
+    padding:0 20px;
+    font-size: 36px;
+  }
+  li.list01 .btn>p:nth-child(2){
+    font-size:18px;
+  }
+  li.list01 .btn>p:last-child{
+    padding-right: 0;
+  }
+
+  /* list02  = 포장선택하기 2 / 4 */
+  li.list02{}
+  li.list02 .bigPic{
+    width:40%;
+    box-sizing: border-box;
+  }
+  li.list02 .bigPic>img{
+    width:100%;
+    border: 3px solid #dfdfdf;
+  }
+  li.list02 #inShow{
+    width:50%;
+    margin-left: 5%;
+    box-sizing: border-box;
+    /* height: fit-content; */
+  }
+  ul.allWrapper{
+    width:100%;
+    display: flex;
+  }
+  li.list02 #inShow li{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  li.list02 #inShow figure{
+    width:30%;
+    margin-bottom:30px;
+  }
+  li.list02 #inShow figure>img{
+    width:100%;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+  }
+  li.list02 #inShow figcaption{
+    font-size:15px;
+    text-align: center;
+  }
+
+  /* list03 = 추가사항 선택하기 3 / 4 */
+  li.list03{}
+  li.list03 .bigPic{
+    width:40%;
+    box-sizing: border-box;
+  }
+  li.list03 .bigPic>img{
+    width:100%;
+    border: 3px solid #dfdfdf;
+  }
+  li.list03 #inShow{
+    width:50%;
+    margin-left: 5%;
+    box-sizing: border-box;
+    /* height: fit-content; */
+  }
+  ul.allCard{
+    width:100%;
+    display: flex;
+  }
+  li.list03 #inShow li{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  li.list03 #inShow figure{
+    width:30%;
+    margin-bottom:30px;
+  }
+  li.list03 #inShow figure>img{
+    width:100%;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+  }
+  li.list03 #inShow figcaption{
+    font-size:15px;
+    text-align: center;
+  }
+
+
+  /* list04 = 결과확인하기 4 / 4 */
+  li.list04{
+    position: relative;
+  }
+  li.list04 .bigPic{
+    width:40%;
+    box-sizing: border-box;
+  }
+  li.list04 .bigPic>img{
+    width:100%;
+    border: 3px solid #dfdfdf;
+  }
+  li.list04 #inShow{
+    width:50%;
+    margin-left: 5%;
+    box-sizing: border-box;
+  }
+  ul.allChoice{
+    width:100%;
+    /* background-color: yellowgreen; */
+  }
+  ul.allChoice li{
+    width:100%;
+    margin-bottom:20px;
+    border-bottom:1px solid #dfdfdf ;
+    text-align: left;
+  }
+  div.allPrice{
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36px;
+    line-height: 40px;
+    position: absolute;
+    right:70px; bottom:80px;
+  }
+  div.allPrice>p{
+    padding:0 10px;
+  }
+  div.allPrice>p:nth-child(2){
+    border-bottom: 1px solid #595959;
+    padding:0;
+  }
+  div.allPrice>p:last-child{
+    padding-right:0;
+  }
+  .list04 small{
+    font-size:12px;
+    position: absolute;
+    right:70px; bottom:50px;
+  }
+
+  div.lastBtn{
+    display: flex;
+    justify-content: center;
+  }
+  div.lastBtn>p{
+    width:50px;
+    background-color: #d9d9d9;
+    font-size: 27px;
+    text-align: center;
+    line-height: 50px;
+    margin:0 100px;
+  }
+
+
+  /* 버튼 진행중 */
+
+

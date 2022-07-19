@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* 타블렛 */
+@media screen and (max-width:989px) and (min-width:580px){
+    header>div,nav>div,article>div,article>section,footer>div{
+        width:90vw
+      }
+
+      /* box01 */
+      #box01{
+        height: calc(100vh - 104px);
+      }
+      #box01>section{
+        height : calc(100vh - 104px);
+      }
+      #box01>section>h2>img{
+        width:85%;
+        display: block;
+        position: absolute;
+        top:45%; left:50%;
+        margin:0 0 0 -42.5%;
+      }
+
+      /* box02 */
+
+      /* box03 */
+      #box03>section>div>figure{
+        width:35%;
+        margin:0 7.5% 0;
+      }
+      #box03>section>div>figure>figcaption{
+        margin-bottom:20px;
+      }
+
+      /* box04 */
+      #box04>section>.button{
+        margin:0 auto 30px;
+      }
+  
+
+    /*  */
+}
+
+/* 모바일 */
+@media screen and (max-width:579px) and (min-width:5px){
+    header>div,nav>div,article>div,article>section,footer>div{
+        width:94vw
+      }
+
+      /* box01 */
+      #box01{
+        height : calc(100vh - 76.95px);
+      }
+      #box01>section{
+        height : calc(100vh - 76.95px);
+      }
+      #box01>section>h2>img{
+        width:85%;
+        top:45%;
+        margin:0 0 0 -42.5%;
+      }
+
+      /* box02 */
+      #box02>section>h3{
+        width:80%; height:35vw;
+        margin:0 auto 30px;
+      }
+      #box02>section>dl>dt{
+        font-size:21px;
+        margin-bottom: 30px;
+      }
+      #box02>section>dl>dd{
+        margin-bottom: 20px;
+      }
+
+      /* box03 */
+      #box03{
+        padding-bottom: 20px;
+      }
+      #box03>section>div>figure{
+        width:60%;
+        margin:0 20% 0;
+      }
+      #box03>section>div>figure>figcaption{
+        margin-bottom:30px;
+      }
+
+      /* box04 */
+      #box04{
+        padding-top:0;
+      }
+      #box04>section>.button{
+        width:95%;
+        /* width:260px; */
+        margin:0 auto 30px;
+      }
+      #box04>section>.button>a>button{
+        font-size:20px;
+        line-height: 60px;
+      }
+      #box04>section>.loccitaneSNS>p{
+        margin-bottom:20px;
+      }
+      #box04>section>.loccitaneSNS>ul>li{
+        margin:0 10px;
+      }
+      #box04>section>.loccitaneSNS>ul>li>a>img{
+        width:20px;
+      }
+      
+}

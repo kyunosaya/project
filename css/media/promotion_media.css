@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* 타블렛 */
+@media screen and (max-width:989px) and (min-width:580px){
+    header>div,nav>div,article>div,article>section,footer>div{
+        width:90vw
+      }
+  
+    /*  */
+}
+
+/* 모바일 */
+@media screen and (max-width:579px) and (min-width:5px){
+    header>div,nav>div,article>div,article>section,footer>div{
+        width:94vw
+      }
+}

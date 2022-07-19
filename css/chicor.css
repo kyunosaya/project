@@ -1,0 +1,213 @@
+  @charset "utf-8";
+  @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+/* main */
+main{
+  padding-top: 194px
+}
+
+/* box00 */
+#box00{}
+#box00>section{
+  width:100%;
+  height: calc(100vh - 194px);
+  /* background-color: yellowgreen; */
+  position: relative;
+  background: url('../img/chicorpic.png') no-repeat left center;
+  background-size: cover;
+  margin-bottom:17px;
+}
+#box00>section>div.logoBackground{
+  width:630px;
+  box-sizing: border-box;
+  padding:60px 90px;
+  background-color: rgba(0,0,0,0.6);
+  position:absolute;
+  top:50%; left:50%;
+  margin: -225px 0 0 -315px;
+}
+#box00>section>div.logoBackground>h3{
+  margin-bottom: 50px;
+}
+#box00>section>div.logoBackground>h3>a>img{
+  width:380px;
+}
+#box00>section>div.logoBackground>p{
+  color:#ffffff;
+  text-align: center;
+}
+#box00>section>div.logoBackground>p:nth-child(2){
+  margin-bottom: 50px;
+}
+#box00>section>div.logoBackground>p.goHome{
+  border: 1px solid #ffffff;
+  width:200px;
+  line-height: 56px;
+  margin: 0 auto;
+}
+#box00>section>div.logoBackground>p.goHome>a{
+  color:white
+}
+
+
+/* 공통 */
+#box01, #box02, #box03, #box04{
+  padding-top:100px;
+  padding-bottom:100px;
+}
+article>section h2{
+  font-size:36px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  line-height: 37px;
+}
+article>section>div>div>h2>span{
+  font-family: 'Joan', serif;
+  font-size:27px;
+  display: flex;
+  justify-content: flex-start;
+  padding:3px;
+}
+
+/* box01*/
+#box01>section>div{
+  width:100%;
+  box-sizing: border-box;
+  padding-left: 50%;
+  background:url('../img/01_onestep.jpg') no-repeat left center;
+  background-size: 50%;
+}
+#box01>section>div>div{
+  padding:50px 10px;
+  text-align: left;
+}
+#box01>section>div>div>h2:before{
+  content:'1';
+  font-size:90px;
+  float:left;
+  line-height: 90px;
+  color:#CCA7D2;
+}
+article>section>div>div>h2>span.color01{
+  color:#CCA7D2;
+}
+#box01>section>div>div>p{
+  padding-left:50px;
+}
+#box01>section>div>div>p:not(p:last-child){
+  margin-bottom:20px
+}
+
+
+/* box02 */
+#box02{
+  background-color: #F0F6E3;
+}
+#box02>section>div{
+  width:100%;
+  box-sizing: border-box;
+  padding-right: 50%;
+  background:url('../img/02_easy.jpg') no-repeat right center;
+  background-size: 50%;
+}
+#box02>section>div>div{
+  padding:50px 10px;
+  text-align: right;
+}
+#box02>section>div>.text{
+  box-sizing: border-box;
+  padding:100px 0;
+}
+#box02>section>div>div>h2{
+  text-align: left;
+}
+#box02>section>div>div>h2:before{
+  content:'2';
+  font-size:90px;
+  float:left;
+  line-height: 90px;
+  color:#2E8067;
+}
+article>section>div>div>h2>span.color02{
+  color:#2E8067;
+}
+#box02>section>div>div>p{
+  padding-right:50px;
+}
+#box02>section>div>div>p:not(p:last-child){
+  margin-bottom:20px
+}
+
+
+/* box03 */
+#box03>section>div{
+  width:100%;
+  box-sizing: border-box;
+  padding-left: 50%;
+  background:url('../img/03_playful.jpg') no-repeat left center;
+  background-size: 50%;
+}
+#box03>section>div>div{
+  padding:50px 10px;
+  text-align: left;
+}
+#box03>section>div>.text{
+  box-sizing: border-box;
+  padding:100px 0;
+}
+#box03>section>div>div>h2:before{
+  content:'3';
+  font-size:90px;
+  float:left;
+  line-height: 90px;
+  color:#DCBD51;
+}
+article>section>div>div>h2>span.color03{
+  color:#DCBD51;
+}
+#box03>section>div>div>p{
+  padding-left:50px;
+}
+#box03>section>div>div>p:not(p:last-child){
+  margin-bottom:20px
+}
+
+
+/* box04 */
+#box04{
+  background-color: #FFF6EF;
+  margin-bottom:100px;
+}
+#box04>section>div{
+  width:100%;
+  box-sizing: border-box;
+  padding-right: 50%;
+  background:url('../img/04_trendy.jpg') no-repeat right center;
+  background-size: 50%;
+}
+#box04>section>div>div{
+  padding:50px 10px;
+  text-align: right;
+}
+#box04>section>div>.text{
+  box-sizing: border-box;
+  padding:100px 0;
+}
+#box04>section>div>div>h2{
+  text-align: left;
+}
+#box04>section>div>div>h2:before{
+  content:'4';
+  font-size:90px;
+  float:left;
+  line-height: 90px;
+  color:#7A4528;
+}
+article>section>div>div>h2>span.color04{
+  color:#7A4528;
+}
+#box04>section>div>div>p{
+  padding-right:50px;
+}
+#box04>section>div>div>p:not(p:last-child){
+  margin-bottom:20px
+}

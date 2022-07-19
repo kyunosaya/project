@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* main */
+#products{
+  padding-top:194px;
+}
+#products>h2{
+  font-size:36px;
+  color:#6F9475;
+  text-align:center;
+  line-height:40px;
+  padding: 150px 0;
+}
+#products>section{
+  overflow: hidden;
+}
+#products>section>div.top{
+  width:74.66666666666667%;
+  padding:17px 8px;
+  box-sizing: border-box;
+  border:1px solid #dfdfdf;
+  float:right;
+  margin-bottom:40px ;
+}
+#products>section>div.top p{
+  display: inline;
+  padding:0 7px;
+  border-right: 1px solid #595959;
+}
+#products>section>div.top>select{
+  padding-left:7px;
+}
+#products>section>div.top>p:nth-child(2){
+  border-style:none;
+}
+.right{
+  float:right;
+}
+.right>p{
+  display: inline;
+}
+.right>p>select{
+  width:150px;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  color:#595959
+}
+.right>p:nth-child(2){
+  border-style:none;
+}
+
+/* 검색*/
+aside.search{
+  width:21.66666666666667%;
+  box-sizing: border-box;
+  float:left;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+}
+aside.search>h3{
+  font-weight:normal;
+  text-align: left;
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+  /* brand checkbox */
+aside.search>div.brand{
+  /* background-color: yellowgreen; */
+  padding:20px 0;
+  border-bottom:1px solid #dfdfdf;
+}
+aside.search>div.brand>p{
+  font-size:21px;
+  margin-bottom:30px;
+}
+aside.search>div.brand>label{
+  font-size: 16px;
+  display: block;
+}
+aside.search>div.brand>label>input{
+  vertical-align: middle;
+  width:20px; height:20px;
+  margin-right:8px ;
+  /* color:#595959; */
+}
+aside.search .close{
+  position: absolute;
+  right:10px; top:10px;
+  width:30px; height:30px;
+  /* background-color: pink; */
+  display: none; /* 숨기기 */
+}
+aside.search .close>span{
+  position:absolute;
+  left:0; top:50%;
+  width:100%;height:1px;
+  background-color: #595959;
+}
+aside.search .close>span:first-child{
+  transform:rotate(-135deg) translateX(0%);
+}
+aside.search .close>span:last-child{
+  transform:rotate(-45deg) translate(0%);
+}
+  /* price */
+.price{
+  padding:20px 0;
+  border-bottom:1px solid #dfdfdf;
+}
+.price>p{
+  font-size:21px;
+  margin-bottom:30px;
+  display: block;
+}
+.price>.minPrice,.price>.maxPrice{
+  width:80px; 
+  padding:2px 5px;
+  box-sizing: border-box;
+  border:1px solid #595959;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size:16px;
+  display: inline-block;
+  line-height: 25px;
+  margin-bottom: 25px;
+  color:#595959
+}
+.price>.minPrice{
+ float: left;
+}
+.price>.maxPrice{
+  float:right;
+}
+.price>#namePrice{
+  width:100%;
+  box-sizing: border-box;
+}
+
+/* nameSearch */
+.nameSearch{
+  padding:20px 0;
+}
+.nameSearch>label{
+  font-size:21px;
+  margin-bottom:30px;
+  display: block;
+}
+.nameSearch>input{
+  width:100%;
+  padding:5px 0 0 30px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  line-height: 25px;
+  border-radius: 10px;
+  font-size:16px;
+}
+.nameSearch>button{
+  float: right;
+  width:70px;
+  line-height:30px;
+  background-color: #595959;
+  color:white;
+  border-style:none;
+  border-radius: 8px;
+  font-size:18px;
+  padding: 6px 0;
+}
+
+
+/* 제품 */
+
+div.all{
+  text-align:center;
+  float: right;
+  width:74.66666666666667%;
+  box-sizing: border-box;
+  /* background-color: violet; */
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom:solid 1px #dfdfdf;
+}
+div.all>div{
+  /* background-color: yellowgreen; */
+  width:30%;
+  box-sizing: border-box;
+  margin-bottom:30px;
+  position: relative;
+}
+div.all>div>figure{
+  width:100%; 
+  box-sizing: border-box;
+  padding: 0 0 15px 0;
+  /* background-color: tomato; */
+}
+div.all>div>figure>img{
+  width:100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfdfdf;
+}
+.all>div>figure>figcaption>dl{
+  width:100%;
+  box-sizing: border-box;
+  /* height:155px; */
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: violet; */
+  padding:0 5px;
+}
+.all>div>figure>figcaption>dl>dt{
+  width:100%;
+  font-weight: bolder;
+  margin-bottom:20px;
+}
+.all>div>figure>figcaption>dl>dd{
+  width:100%;
+}
+.all>div>figure>figcaption>dl>dd:nth-child(2){
+  margin-bottom:25px;
+}
+.all>div>figure>figcaption>dl>dd:nth-child(3){
+  /* margin-bottom:15px; */
+  width:100%;
+  position: absolute;
+  bottom:0; left:0;
+}
+#products>section>p{
+  /* clear: both; */
+  margin:0 auto 50px;
+  width:74.66666666666667%;
+  float:right;
+  text-align: center;
+}
+  /* display: inline; */
