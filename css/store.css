@@ -1,1 +1,20 @@
 @charset "utf-8";
+
+#box01{
+  padding-top:100px;
+  margin-bottom:50px;
+}
+#box01>h3{
+  color:#6F9475;
+}
+#box01>section{}
+#box01>section>div{}
+.bigImg{
+  background-color: yellowgreen;
+}
+.explain{
+  background-color: violet;
+}
+.explain>dl{}
+.explain>dl>dt{}
+.explaindl>dl>dd{}

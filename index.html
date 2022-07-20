@@ -40,7 +40,7 @@
                         <ul>
                             <li class="hiddenWeb"><a href="./index.html">홈</a></li>
 
-                            <li class="hiddenWeb">
+                            <li id="memberMenu" class="hiddenWeb" name="on">
                                 <a href="#">회원정보</a>
                                 <span></span>
                                 <ul>
@@ -93,8 +93,8 @@
                             </div>
                             </li>
 
-                            <li class="hiddenWeb">
-                                <a href="">브랜드소개</a>
+                            <li id="brandMenu" class="hiddenWeb" name="on">
+                                <a>브랜드소개</a>
                                 <span></span>
                                 <ul>
                                     <li><a href="./loccitane.html">록시땅</a></li>
@@ -968,6 +968,42 @@
                 $('#back').hide();
             })
         });
+        //타블렛,모바일
+            // nav
+        $('.btn').on('click',function(e){
+            $('nav').css('right','0px');
+            $('nav .close').css('display','block')
+        });
+        $('nav .close').on('click',function(e){
+            $('nav').css('right','-350px');
+            $('nav .close').css('display','none')
+        });
+            // brand,member menu
+        $('#memberMenu').on('click',function(e){
+            $('nav .close').show();
+            let memberMenuName = $(this).attr('name');
+                if(memberMenuName == 'on'){
+                    $('nav #memberMenu>ul').css('display','block');
+                    $(this).attr('name','off');
+                }
+                else{
+                    $('nav #memberMenu>ul').css('display','none')
+                    $(this).attr('name','on');
+                }
+        });
+        $('#brandMenu').on('click',function(e){
+            $('nav .close').show();
+            let brandMenuName = $(this).attr('name');
+                if(brandMenuName == 'on'){
+                    $('nav #brandMenu>ul').css('display','block');
+                    $(this).attr('name','off');
+                }
+                else{
+                    $('nav #brandMenu>ul').css('display','none')
+                    $(this).attr('name','on');
+                }
+        });
+
 
 // view
         //준비하기

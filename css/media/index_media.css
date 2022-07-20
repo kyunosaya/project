@@ -108,12 +108,14 @@ nav .close{
   width:25px; height:25px;
   display: none; /* 숨기기 */
 }
-nav .hiddenWeb>ul{
+/* 회원정보 */
+nav #memberMenu>ul{
+  text-indent: 15px;
   display: none; /* 숨기기 */
 }
-/* 회원정보 */
-nav>div>ul>li>ul{
+nav #brandMenu>ul{
   text-indent: 15px;
+  display: none; /* 숨기기 */
 }
 nav>div>ul>li>ul>li>a{
   line-height: 40px;
@@ -453,13 +455,16 @@ p.btn>span:nth-child(3){
 
 /* nav */
 nav{
-  width:100%; 
+  width:100%; height:100%;
   position:fixed;
   right:-100vw;  /* 숨기기 */
   /* right:0;  */
   top:0;
   padding:40px;
   box-sizing: border-box;
+}
+nav .hiddenTablet{
+  display: none;
 }
 nav>div{
   width:100%;
@@ -487,7 +492,11 @@ nav>div>ul>li>a{
   line-height: 45px;
 }
 /* 회원정보,브랜드소개 */
-nav>div>ul>li>ul{
+nav #memberMenu>ul{
+  text-indent: 15px;
+  display: none; /* 숨기기 */
+}
+nav #brandMenu>ul{
   text-indent: 15px;
   display: none; /* 숨기기 */
 }
